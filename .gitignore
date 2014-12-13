@@ -19,8 +19,9 @@
 /log/mongrel_debug
 /plugins/*
 !/plugins/README
+!/plugins/*.tgz
 /public/dispatch.*
-/public/plugin_assets/*
+/public/plugin_assets
 /public/themes/*
 !/public/themes/alternate
 !/public/themes/classic
