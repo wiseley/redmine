@@ -1,0 +1,615 @@
+diff --git a/public/help/ar/wiki_syntax.html b/public/help/ar/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/ar/wiki_syntax.html
++++ b/public/help/ar/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/az/wiki_syntax.html b/public/help/az/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/az/wiki_syntax.html
++++ b/public/help/az/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/bg/wiki_syntax.html b/public/help/bg/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/bg/wiki_syntax.html
++++ b/public/help/bg/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/bs/wiki_syntax.html b/public/help/bs/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/bs/wiki_syntax.html
++++ b/public/help/bs/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/ca/wiki_syntax.html b/public/help/ca/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/ca/wiki_syntax.html
++++ b/public/help/ca/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/da/wiki_syntax.html b/public/help/da/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/da/wiki_syntax.html
++++ b/public/help/da/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/el/wiki_syntax.html b/public/help/el/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/el/wiki_syntax.html
++++ b/public/help/el/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/en-gb/wiki_syntax.html b/public/help/en-gb/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/en-gb/wiki_syntax.html
++++ b/public/help/en-gb/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/et/wiki_syntax.html b/public/help/et/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/et/wiki_syntax.html
++++ b/public/help/et/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/eu/wiki_syntax.html b/public/help/eu/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/eu/wiki_syntax.html
++++ b/public/help/eu/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/fa/wiki_syntax.html b/public/help/fa/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/fa/wiki_syntax.html
++++ b/public/help/fa/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/fi/wiki_syntax.html b/public/help/fi/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/fi/wiki_syntax.html
++++ b/public/help/fi/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/fr/wiki_syntax.html b/public/help/fr/wiki_syntax.html
+index d3e2678..97504ce 100644
+--- a/public/help/fr/wiki_syntax.html
++++ b/public/help/fr/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Listes</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Titres</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Titre 1</td><td><h1>Titre 1</h1></td></tr>
+diff --git a/public/help/gl/wiki_syntax.html b/public/help/gl/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/gl/wiki_syntax.html
++++ b/public/help/gl/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/he/wiki_syntax.html b/public/help/he/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/he/wiki_syntax.html
++++ b/public/help/he/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/hr/wiki_syntax.html b/public/help/hr/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/hr/wiki_syntax.html
++++ b/public/help/hr/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/hu/wiki_syntax.html b/public/help/hu/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/hu/wiki_syntax.html
++++ b/public/help/hu/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/id/wiki_syntax.html b/public/help/id/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/id/wiki_syntax.html
++++ b/public/help/id/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/it/wiki_syntax.html b/public/help/it/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/it/wiki_syntax.html
++++ b/public/help/it/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/ko/wiki_syntax.html b/public/help/ko/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/ko/wiki_syntax.html
++++ b/public/help/ko/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/lt/wiki_syntax.html b/public/help/lt/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/lt/wiki_syntax.html
++++ b/public/help/lt/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/lv/wiki_syntax.html b/public/help/lv/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/lv/wiki_syntax.html
++++ b/public/help/lv/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/mk/wiki_syntax.html b/public/help/mk/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/mk/wiki_syntax.html
++++ b/public/help/mk/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/mn/wiki_syntax.html b/public/help/mn/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/mn/wiki_syntax.html
++++ b/public/help/mn/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/nl/wiki_syntax.html b/public/help/nl/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/nl/wiki_syntax.html
++++ b/public/help/nl/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/no/wiki_syntax.html b/public/help/no/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/no/wiki_syntax.html
++++ b/public/help/no/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/pl/wiki_syntax.html b/public/help/pl/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/pl/wiki_syntax.html
++++ b/public/help/pl/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/pt-br/wiki_syntax.html b/public/help/pt-br/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/pt-br/wiki_syntax.html
++++ b/public/help/pt-br/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/pt/wiki_syntax.html b/public/help/pt/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/pt/wiki_syntax.html
++++ b/public/help/pt/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/ro/wiki_syntax.html b/public/help/ro/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/ro/wiki_syntax.html
++++ b/public/help/ro/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/sk/wiki_syntax.html b/public/help/sk/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/sk/wiki_syntax.html
++++ b/public/help/sk/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/sl/wiki_syntax.html b/public/help/sl/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/sl/wiki_syntax.html
++++ b/public/help/sl/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/sq/wiki_syntax.html b/public/help/sq/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/sq/wiki_syntax.html
++++ b/public/help/sq/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/sr-yu/wiki_syntax.html b/public/help/sr-yu/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/sr-yu/wiki_syntax.html
++++ b/public/help/sr-yu/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/sr/wiki_syntax.html b/public/help/sr/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/sr/wiki_syntax.html
++++ b/public/help/sr/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/sv/wiki_syntax.html b/public/help/sv/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/sv/wiki_syntax.html
++++ b/public/help/sv/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/th/wiki_syntax.html b/public/help/th/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/th/wiki_syntax.html
++++ b/public/help/th/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/tr/wiki_syntax.html b/public/help/tr/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/tr/wiki_syntax.html
++++ b/public/help/tr/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/uk/wiki_syntax.html b/public/help/uk/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/uk/wiki_syntax.html
++++ b/public/help/uk/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/vi/wiki_syntax.html b/public/help/vi/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/vi/wiki_syntax.html
++++ b/public/help/vi/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
+diff --git a/public/help/zh/wiki_syntax.html b/public/help/zh/wiki_syntax.html
+index d67dc88..aa645cc 100644
+--- a/public/help/zh/wiki_syntax.html
++++ b/public/help/zh/wiki_syntax.html
+@@ -36,8 +36,8 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ </td></tr>
+ 
+ <tr><th colspan="3">Lists</th></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />* Item 2</td><td><ul><li>Item 1</li><li>Item 2</li></ul></td></tr>
+-<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br /># Item 2</td><td><ol><li>Item 1</li><li>Item 2</li></ol></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ul.png" style="border: 1px solid #bbb;" alt="Unordered list" /></th><td>* Item 1<br />** Sub<br />* Item 2</td><td><ul><li>Item 1<ul><li>Sub</li></ul></li><li>Item 2</li></ul></td></tr>
++<tr><th><img src="../../images/jstoolbar/bt_ol.png" style="border: 1px solid #bbb;" alt="Ordered list" /></th><td># Item 1<br />## Sub<br /># Item 2</td><td><ol><li>Item 1<ol><li>Sub</li></ol></li><li>Item 2</li></ol></td></tr>
+ 
+ <tr><th colspan="3">Headings</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_h1.png" style="border: 1px solid #bbb;" alt="Heading 1" /></th><td>h1. Title 1</td><td><h1>Title 1</h1></td></tr>
