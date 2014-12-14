@@ -1,0 +1,993 @@
+diff --git a/app/models/issue.rb b/app/models/issue.rb
+index 84a5d7b..ecf6e44 100644
+--- a/app/models/issue.rb
++++ b/app/models/issue.rb
+@@ -617,7 +617,7 @@ class Issue < ActiveRecord::Base
+       errors.add :parent_issue_id, :invalid
+     elsif @parent_issue
+       if !valid_parent_project?(@parent_issue)
+-        errors.add :parent_issue_id, :invalid
++        errors.add :base, I18n.t(:error_invalid_parent_issue_id) 
+       elsif (@parent_issue != parent) && (all_dependent_issues.include?(@parent_issue) || @parent_issue.all_dependent_issues.include?(self))
+         errors.add :parent_issue_id, :invalid
+       elsif !new_record?
+diff --git a/app/models/issue_relation.rb b/app/models/issue_relation.rb
+index f0376b5..1d8fcae 100644
+--- a/app/models/issue_relation.rb
++++ b/app/models/issue_relation.rb
+@@ -99,7 +99,7 @@ class IssueRelation < ActiveRecord::Base
+       errors.add :issue_to_id, :invalid if issue_from_id == issue_to_id
+       unless issue_from.project_id == issue_to.project_id ||
+                 Setting.cross_project_issue_relations?
+-        errors.add :issue_to_id, :not_same_project
++        errors.add :issue_to_id, :cannot_relate_issues
+       end
+       # detect circular dependencies depending wether the relation should be reversed
+       if TYPES.has_key?(relation_type) && TYPES[relation_type][:reverse]
+diff --git a/config/locales/ar.yml b/config/locales/ar.yml
+index 9eb87a0..e09fe35 100644
+--- a/config/locales/ar.yml
++++ b/config/locales/ar.yml
+@@ -126,6 +126,7 @@ ar:
+         even: "must be even"
+         greater_than_start_date: "يجب ان تكون اكثر من تاريخ البداية"
+         not_same_project: "لا ينتمي الى نفس المشروع"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "هذه العلاقة سوف تخلق علاقة تبعية دائرية"
+         cant_link_an_issue_with_a_descendant: "لا يمكن ان تكون المشكلة مرتبطة بواحدة من المهام الفرعية"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -195,6 +196,7 @@ ar:
+   error_unable_delete_issue_status: 'غير قادر على حذف حالة بند العمل'
+   error_unable_to_connect: "تعذر الاتصال(%{value})"
+   error_attachment_too_big: " (%{max_size})لا يمكن تحميل هذا الملف، لقد تجاوز الحد الاقصى المسموح به "
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count}تعذر حفظ الملف"
+ 
+   mail_subject_lost_password: " %{value}كلمة المرور الخاصة بك "
+diff --git a/config/locales/az.yml b/config/locales/az.yml
+index 9197838..bde7608 100644
+--- a/config/locales/az.yml
++++ b/config/locales/az.yml
+@@ -194,6 +194,7 @@ az:
+         even: "yalnız cüt təyinata malik ola bilər"
+         greater_than_start_date: "başlanğıc tarixindən sonra olmalıdır"
+         not_same_project: "təkcə bir layihəyə aid deyildir"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Belə əlaqə dövri asılılığa gətirib çıxaracaq"
+         cant_link_an_issue_with_a_descendant: "Tapşırıq özünün alt tapşırığı ilə əlaqəli ola bilməz"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -933,6 +934,7 @@ az:
+   text_wiki_destroy_confirmation: Siz bu Wiki və onun tərkibindəkiləri silmək istədiyinizə əminsinizmi?
+   text_workflow_edit: Vəziyyətlərin ardıcıllığını redaktə etmək üçün rol və trekeri seçin
+ 
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "faylın (ların) %{count} yadda saxlamaq mümkün deyildir."
+   text_wiki_page_destroy_question: Bu səhifə %{descendants} yaxın və çox yaxın səhifələrə malikdir. Siz nə etmək istəyirsiniz?
+   text_wiki_page_reassign_children: Cari səhifə üçün yaxın səhifələri yenidən təyin etmək
+diff --git a/config/locales/bg.yml b/config/locales/bg.yml
+index 4cd63b3..4b117bc 100644
+--- a/config/locales/bg.yml
++++ b/config/locales/bg.yml
+@@ -128,6 +128,7 @@ bg:
+         even: "трябва да бъде четен[a/o]"
+         greater_than_start_date: "трябва да е след началната дата"
+         not_same_project: "не е от същия проект"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Тази релация ще доведе до безкрайна зависимост"
+         cant_link_an_issue_with_a_descendant: "Една задача не може да бъде свързвана към своя подзадача"
+         earlier_than_minimum_start_date: "не може да бъде по-рано от %{date} поради предхождащи задачи"
+@@ -206,6 +207,7 @@ bg:
+   error_unable_to_connect: Невъзможност за свързване с (%{value})
+   error_attachment_too_big: Този файл не може да бъде качен, понеже надхвърля максималната възможна големина (%{max_size})
+   error_session_expired: Вашата сесия е изтекла. Моля влезете в Redmine отново.
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} файла не бяха записани."
+ 
+   mail_subject_lost_password: "Вашата парола (%{value})"
+diff --git a/config/locales/bs.yml b/config/locales/bs.yml
+index 578afa8..1672d53 100644
+--- a/config/locales/bs.yml
++++ b/config/locales/bs.yml
+@@ -138,6 +138,7 @@ bs:
+         even: "mora biti paran"
+         greater_than_start_date: "mora biti veći nego početni datum"
+         not_same_project: "ne pripada istom projektu"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Ova relacija stvar cirkularnu zavisnost"
+         cant_link_an_issue_with_a_descendant: "An issue can not be linked to one of its subtasks"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -186,6 +187,7 @@ bs:
+   error_scm_annotate: "Ova stavka ne postoji ili nije označena."
+   error_issue_not_found_in_project: 'Aktivnost nije nađena ili ne pripada ovom projektu'
+ 
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} fajl(ovi) ne mogu biti snimljen(i)."
+ 
+   mail_subject_lost_password: "Vaša %{value} lozinka"
+diff --git a/config/locales/ca.yml b/config/locales/ca.yml
+index 0771600..66380d9 100644
+--- a/config/locales/ca.yml
++++ b/config/locales/ca.yml
+@@ -130,6 +130,7 @@ ca:
+         even: "ha de ser parell"
+         greater_than_start_date: "ha de ser superior que la data inicial"
+         not_same_project: "no pertany al mateix projecte"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Aquesta relació crearia una dependència circular"
+         cant_link_an_issue_with_a_descendant: "Un assumpte no es pot enllaçar a una de les seves subtasques"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -193,6 +194,7 @@ ca:
+   error_workflow_copy_target: "Seleccioneu seguidors i rols objectiu"
+   error_unable_delete_issue_status: "No s'ha pogut suprimir l'estat de l'assumpte"
+   error_unable_to_connect: "No s'ha pogut connectar (%{value})"
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "No s'han pogut desar %{count} fitxers."
+ 
+   mail_subject_lost_password: "Contrasenya de %{value}"
+diff --git a/config/locales/cs.yml b/config/locales/cs.yml
+index bbe4072..eef15c7 100644
+--- a/config/locales/cs.yml
++++ b/config/locales/cs.yml
+@@ -132,6 +132,7 @@ cs:
+         even: "musí být sudé"
+         greater_than_start_date: "musí být větší než počáteční datum"
+         not_same_project: "nepatří stejnému projektu"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Tento vztah by vytvořil cyklickou závislost"
+         cant_link_an_issue_with_a_descendant: "Úkol nemůže být spojen s jedním z jeho dílčích úkolů"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -197,6 +198,7 @@ cs:
+   error_workflow_copy_target: Prosím vyberte cílovou frontu(y) a roli(e)
+   error_unable_delete_issue_status: Nelze smazat stavy úkolů
+   error_unable_to_connect: Nelze se připojit (%{value})
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} soubor(ů) nebylo možné uložit."
+ 
+   mail_subject_lost_password: "Vaše heslo (%{value})"
+diff --git a/config/locales/da.yml b/config/locales/da.yml
+index 9d4d1bc..85f3c09 100644
+--- a/config/locales/da.yml
++++ b/config/locales/da.yml
+@@ -139,6 +139,7 @@ da:
+         even: "skal være lige"
+         greater_than_start_date: "skal være senere end startdatoen"
+         not_same_project: "hører ikke til samme projekt"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Denne relation vil skabe et afhængighedsforhold"
+         cant_link_an_issue_with_a_descendant: "En sag kan ikke relateres til en af dens underopgaver"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -755,6 +756,7 @@ da:
+   text_email_delivery_not_configured: "Email-afsendelse er ikke indstillet og notifikationer er defor slået fra.\nKonfigurér din SMTP server i config/configuration.yml og genstart applikationen for at aktivere email-afsendelse."
+   permission_protect_wiki_pages: Beskyt wiki sider
+   permission_add_issue_watchers: Tilføj overvågere
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "der var %{count} fil(er), som ikke kunne gemmes."
+   permission_comment_news: Kommentér nyheder
+   text_enumeration_category_reassign_to: 'Flyt dem til denne værdi:'
+diff --git a/config/locales/de.yml b/config/locales/de.yml
+index de20793..067af4e 100644
+--- a/config/locales/de.yml
++++ b/config/locales/de.yml
+@@ -143,6 +143,7 @@ de:
+         even: "muss gerade sein"
+         greater_than_start_date: "muss größer als Anfangsdatum sein"
+         not_same_project: "gehört nicht zum selben Projekt"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Diese Beziehung würde eine zyklische Abhängigkeit erzeugen"
+         cant_link_an_issue_with_a_descendant: "Ein Ticket kann nicht mit einer Ihrer Unteraufgaben verlinkt werden"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -1137,4 +1138,5 @@ de:
+   version_status_locked: gesperrt
+   version_status_open: offen
+ 
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} Datei(en) konnten nicht gespeichert werden."
+diff --git a/config/locales/el.yml b/config/locales/el.yml
+index 0a82dac..0b91fa1 100644
+--- a/config/locales/el.yml
++++ b/config/locales/el.yml
+@@ -128,6 +128,7 @@ el:
+         even: "πρέπει να είναι ζυγός"
+         greater_than_start_date: "πρέπει να είναι αργότερα από την ημερομηνία έναρξης"
+         not_same_project: "δεν ανήκει στο ίδιο έργο"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Αυτή η σχέση θα δημιουργήσει κυκλικές εξαρτήσεις"
+         cant_link_an_issue_with_a_descendant: "An issue can not be linked to one of its subtasks"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -178,6 +179,7 @@ el:
+   error_no_tracker_in_project: 'Δεν υπάρχει ανιχνευτής για αυτό το έργο. Παρακαλώ ελέγξτε τις ρυθμίσεις του έργου.'
+   error_no_default_issue_status: 'Δεν έχει οριστεί η προεπιλογή  κατάστασης θεμάτων. Παρακαλώ ελέγξτε τις ρυθμίσεις σας (Μεταβείτε στην  "Διαχείριση -> Κατάσταση θεμάτων").'
+ 
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} αρχείο(α) δε μπορούν να αποθηκευτούν."
+ 
+   mail_subject_lost_password: "Ο κωδικός σας %{value}"
+diff --git a/config/locales/en-GB.yml b/config/locales/en-GB.yml
+index d241c67..1ae9aa5 100644
+--- a/config/locales/en-GB.yml
++++ b/config/locales/en-GB.yml
+@@ -131,6 +131,7 @@ en-GB:
+         even: "must be even"
+         greater_than_start_date: "must be greater than start date"
+         not_same_project: "doesn't belong to the same project"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "This relation would create a circular dependency"
+         cant_link_an_issue_with_a_descendant: "An issue cannot be linked to one of its subtasks"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -197,6 +198,7 @@ en-GB:
+   error_workflow_copy_target: 'Please select target tracker(s) and role(s)'
+   error_unable_delete_issue_status: 'Unable to delete issue status'
+   error_unable_to_connect: "Unable to connect (%{value})"
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} file(s) could not be saved."
+ 
+   mail_subject_lost_password: "Your %{value} password"
+diff --git a/config/locales/en.yml b/config/locales/en.yml
+index fa33cc9..415d09a 100644
+--- a/config/locales/en.yml
++++ b/config/locales/en.yml
+@@ -127,6 +127,7 @@ en:
+         even: "must be even"
+         greater_than_start_date: "must be greater than start date"
+         not_same_project: "doesn't belong to the same project"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "This relation would create a circular dependency"
+         cant_link_an_issue_with_a_descendant: "An issue cannot be linked to one of its subtasks"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -203,6 +204,7 @@ en:
+   error_unable_to_connect: "Unable to connect (%{value})"
+   error_attachment_too_big: "This file cannot be uploaded because it exceeds the maximum allowed file size (%{max_size})"
+   error_session_expired: "Your session has expired. Please login again."
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} file(s) could not be saved."
+ 
+   mail_subject_lost_password: "Your %{value} password"
+diff --git a/config/locales/es.yml b/config/locales/es.yml
+index cf3e2eb..bbc4b86 100644
+--- a/config/locales/es.yml
++++ b/config/locales/es.yml
+@@ -135,6 +135,7 @@ es:
+         even: "debe ser par"
+         greater_than_start_date: "debe ser posterior a la fecha de comienzo"
+         not_same_project: "no pertenece al mismo proyecto"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Esta relación podría crear una dependencia circular"
+         cant_link_an_issue_with_a_descendant: "Esta petición no puede ser ligada a una de estas tareas"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -829,6 +830,7 @@ es:
+   text_wiki_destroy_confirmation: ¿Seguro que quiere borrar el wiki y todo su contenido?
+   text_workflow_edit: Seleccionar un flujo de trabajo para actualizar
+   text_plugin_assets_writable: Se puede escribir en el directorio público de las extensiones
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "No se han podido grabar %{count} ficheros."
+   button_create_and_continue: Crear y continuar
+   text_custom_field_possible_values_info: 'Un valor en cada línea'
+diff --git a/config/locales/et.yml b/config/locales/et.yml
+index 3e6ddb9..b4a9821 100644
+--- a/config/locales/et.yml
++++ b/config/locales/et.yml
+@@ -144,6 +144,7 @@ et:
+         even: "peab olema paarisarv"
+         greater_than_start_date: "peab olema suurem kui alguskuupäev"
+         not_same_project: "ei kuulu sama projekti juurde"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "See suhe looks vastastikuse sõltuvuse"
+         cant_link_an_issue_with_a_descendant: "Teemat ei saa sidustada tema enda alamteemaga"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -215,6 +216,7 @@ et:
+   error_unable_delete_issue_status: "Oleku kustutamine ei õnnestunud"
+   error_unable_to_connect: "Ühenduse loomine ei õnnestunud (%{value})"
+   error_attachment_too_big: "Faili ei saa üles laadida, sest see on lubatust (%{max_size}) pikem"
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} faili salvestamine ei õnnestunud."
+ 
+   mail_subject_lost_password: "Sinu %{value} parool"
+diff --git a/config/locales/eu.yml b/config/locales/eu.yml
+index 5a8f6c4..04c9227 100644
+--- a/config/locales/eu.yml
++++ b/config/locales/eu.yml
+@@ -129,6 +129,7 @@ eu:
+         even: "bikoitia izan behar du"
+         greater_than_start_date: "hasiera data baino handiagoa izan behar du"
+         not_same_project: "ez dago proiektu berdinean"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Erlazio honek mendekotasun zirkular bat sortuko luke"
+         cant_link_an_issue_with_a_descendant: "Zeregin bat ezin da bere azpiataza batekin estekatu."
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -186,6 +187,7 @@ eu:
+   error_workflow_copy_source: 'Mesedez hautatu iturburuko aztarnari edo rola'
+   error_workflow_copy_target: 'Mesedez hautatu helburuko aztarnari(ak) edo rola(k)'
+ 
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} fitxategi ezin izan d(ir)a gorde."
+ 
+   mail_subject_lost_password: "Zure %{value} pasahitza"
+diff --git a/config/locales/fa.yml b/config/locales/fa.yml
+index 8156385..975704e 100644
+--- a/config/locales/fa.yml
++++ b/config/locales/fa.yml
+@@ -127,6 +127,7 @@ fa:
+         even: "باید زوج باشد"
+         greater_than_start_date: "باید از تاریخ آغاز بزرگتر باشد"
+         not_same_project: "به همان پروژه وابسته نیست"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "این وابستگی یک وابستگی دایره وار خواهد ساخت"
+         cant_link_an_issue_with_a_descendant: "یک مورد نمی‌تواند به یکی از زیر کارهایش پیوند بخورد"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -192,6 +193,7 @@ fa:
+   error_workflow_copy_target: 'ردیابها یا نقش‌های مقصد را برگزینید.'
+   error_unable_delete_issue_status: 'وضعیت مورد را نمی‌توان پاک کرد.'
+   error_unable_to_connect: "نمی‌توان متصل شد (%{value})"
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} پرونده ذخیره نشد."
+ 
+   mail_subject_lost_password: "گذرواژه حساب %{value} شما"
+diff --git a/config/locales/fi.yml b/config/locales/fi.yml
+index fd57e5a..b1e0c4d 100644
+--- a/config/locales/fi.yml
++++ b/config/locales/fi.yml
+@@ -152,6 +152,7 @@ fi:
+         even: "täytyy olla parillinen"
+         greater_than_start_date: "tulee olla aloituspäivän jälkeinen"
+         not_same_project: "ei kuulu samaan projektiin"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Tämä suhde loisi kehän."
+         cant_link_an_issue_with_a_descendant: "An issue can not be linked to one of its subtasks"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -813,6 +814,7 @@ fi:
+   text_diff_truncated: '... This diff was truncated because it exceeds the maximum size that can be displayed.'
+   setting_diff_max_lines_displayed: Max number of diff lines displayed
+   text_plugin_assets_writable: Plugin assets directory writable
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} file(s) could not be saved."
+   button_create_and_continue: Create and continue
+   text_custom_field_possible_values_info: 'One line for each value'
+diff --git a/config/locales/fr.yml b/config/locales/fr.yml
+index a167fa0..f6f9bef 100644
+--- a/config/locales/fr.yml
++++ b/config/locales/fr.yml
+@@ -147,6 +147,7 @@ fr:
+         even: "doit être pair"
+         greater_than_start_date: "doit être postérieure à la date de début"
+         not_same_project: "n'appartient pas au même projet"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Cette relation créerait une dépendance circulaire"
+         cant_link_an_issue_with_a_descendant: "Une demande ne peut pas être liée à l'une de ses sous-tâches"
+         earlier_than_minimum_start_date: "ne peut pas être antérieure au %{date} à cause des demandes qui précèdent"
+@@ -223,6 +224,7 @@ fr:
+   error_unable_to_connect: Connexion impossible (%{value})
+   error_attachment_too_big: Ce fichier ne peut pas être attaché car il excède la taille maximale autorisée (%{max_size})
+   error_session_expired: "Votre session a expiré. Veuillez vous reconnecter."
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} fichier(s) n'ont pas pu être sauvegardés."
+ 
+   mail_subject_lost_password: "Votre mot de passe %{value}"
+diff --git a/config/locales/gl.yml b/config/locales/gl.yml
+index bfc93ea..ac3dc2b 100644
+--- a/config/locales/gl.yml
++++ b/config/locales/gl.yml
+@@ -156,6 +156,7 @@ gl:
+         even: "debe ser impar"
+         greater_than_start_date: "debe ser posterior á data de comezo"
+         not_same_project: "non pertence ao mesmo proxecto"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Esta relación podería crear unha dependencia circular"
+         cant_link_an_issue_with_a_descendant: "As peticións non poden estar ligadas coas súas subtarefas"
+         earlier_than_minimum_start_date: "Non pode ser antes de %{date} por mor de peticións anteriores"
+@@ -804,6 +805,7 @@ gl:
+   text_user_wrote: "%{value} escribiu:"
+   text_wiki_destroy_confirmation: Seguro que quere borrar o wiki e todo o seu contido?
+   text_workflow_edit: Seleccionar un fluxo de traballo para actualizar
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "Non foi posíbel gardar %{count} ficheiros."
+   field_editable: "Editábel"
+   text_plugin_assets_writable: "Ten permisos de escritura no cartafol de recursos do complemento."
+diff --git a/config/locales/he.yml b/config/locales/he.yml
+index 401563a..b629fc5 100644
+--- a/config/locales/he.yml
++++ b/config/locales/he.yml
+@@ -132,6 +132,7 @@ he:
+         even: "חייב להיות זוגי"
+         greater_than_start_date: "חייב להיות מאוחר יותר מתאריך ההתחלה"
+         not_same_project: "לא שייך לאותו הפרויקט"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "קשר זה יצור תלות מעגלית"
+         cant_link_an_issue_with_a_descendant: "לא ניתן לקשר נושא לתת־משימה שלו"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -196,6 +197,7 @@ he:
+   error_workflow_copy_target: נא בחר תפקיד(ים) וסיווג(ים)
+   error_unable_delete_issue_status: לא ניתן למחוק מצב נושא
+   error_unable_to_connect: לא ניתן להתחבר (%{value})
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "כשלון בשמירת %{count} קבצים."
+ 
+   mail_subject_lost_password: "סיסמת ה־%{value} שלך"
+diff --git a/config/locales/hr.yml b/config/locales/hr.yml
+index ebd4bc9..d41ecf1 100644
+--- a/config/locales/hr.yml
++++ b/config/locales/hr.yml
+@@ -122,6 +122,7 @@ hr:
+         even: "mora biti paran"
+         greater_than_start_date: "mora biti veci nego pocetni datum"
+         not_same_project: "ne pripada istom projektu"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Ovaj relacija stvara kružnu ovisnost"
+         cant_link_an_issue_with_a_descendant: "An issue can not be linked to one of its subtasks"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -179,6 +180,7 @@ hr:
+   error_workflow_copy_source: 'Please select a source tracker or role'
+   error_workflow_copy_target: 'Please select target tracker(s) and role(s)'
+ 
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} Datoteka/e nije mogla biti spremljena."
+ 
+   mail_subject_lost_password: "Vaša %{value} zaporka"
+diff --git a/config/locales/hu.yml b/config/locales/hu.yml
+index 66c7743..29398af 100644
+--- a/config/locales/hu.yml
++++ b/config/locales/hu.yml
+@@ -148,6 +148,7 @@
+         even: "páros kell legyen"
+         greater_than_start_date: "nagyobbnak kell lennie, mint az indítás dátuma"
+         not_same_project: "nem azonos projekthez tartozik"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Ez a kapcsolat egy körkörös függőséget eredményez"
+         cant_link_an_issue_with_a_descendant: "An issue can not be linked to one of its subtasks"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -811,6 +812,7 @@
+   text_diff_truncated: '... A diff fájl vége nem jelenik meg, mert hosszab, mint a megjeleníthető sorok száma.'
+   setting_diff_max_lines_displayed: A megjelenítendő sorok száma (maximum) a diff fájloknál
+   text_plugin_assets_writable: Plugin eszközök könyvtár írható
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} fájl mentése nem sikerült."
+   button_create_and_continue: Létrehozás és folytatás
+   text_custom_field_possible_values_info: 'Értékenként egy sor'
+diff --git a/config/locales/id.yml b/config/locales/id.yml
+index d6c18d2..c5b45c3 100644
+--- a/config/locales/id.yml
++++ b/config/locales/id.yml
+@@ -127,6 +127,7 @@ id:
+         even: "harus genap"
+         greater_than_start_date: "harus lebih besar dari tanggal mulai"
+         not_same_project: "tidak tergabung dalam proyek yang sama"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "kaitan ini akan menghasilkan circular dependency"
+         cant_link_an_issue_with_a_descendant: "An issue can not be linked to one of its subtasks"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -179,6 +180,7 @@ id:
+   error_can_not_reopen_issue_on_closed_version: 'Masalah yang ditujukan pada versi tertutup tidak bisa dibuka kembali'
+   error_can_not_archive_project: Proyek ini tidak bisa diarsipkan
+ 
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} berkas tidak bisa disimpan."
+ 
+   mail_subject_lost_password: "Kata sandi %{value} anda"
+diff --git a/config/locales/it.yml b/config/locales/it.yml
+index 540cb64..d8ecc5c 100644
+--- a/config/locales/it.yml
++++ b/config/locales/it.yml
+@@ -132,6 +132,7 @@ it:
+         even: "deve essere pari"
+         greater_than_start_date: "deve essere maggiore della data di partenza"
+         not_same_project: "non appartiene allo stesso progetto"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Questa relazione creerebbe una dipendenza circolare"
+         cant_link_an_issue_with_a_descendant: "Una segnalazione non può essere collegata a una delle sue discendenti"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -792,6 +793,7 @@ it:
+   text_diff_truncated: '... Le differenze sono state troncate perchè superano il limite massimo visualizzabile.'
+   setting_diff_max_lines_displayed: Limite massimo di differenze (linee) mostrate
+   text_plugin_assets_writable: Directory attività dei plugins scrivibile
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} file non possono essere salvati."
+   button_create_and_continue: Crea e continua
+   text_custom_field_possible_values_info: 'Un valore per ogni riga'
+diff --git a/config/locales/ja.yml b/config/locales/ja.yml
+index 9ffa1d5..e094ce5 100644
+--- a/config/locales/ja.yml
++++ b/config/locales/ja.yml
+@@ -148,6 +148,7 @@ ja:
+         even: "は偶数にしてください。"
+         greater_than_start_date: "を開始日より後にしてください。"
+         not_same_project: "同じプロジェクトに属していません。"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "この関係では、循環依存になります。"
+         cant_link_an_issue_with_a_descendant: "親子関係にあるチケット間での関連の設定はできません。"
+         earlier_than_minimum_start_date: "を%{date}より前にすることはできません。先行するチケットがあります。"
+@@ -214,6 +215,7 @@ ja:
+   error_workflow_copy_target: 'コピー先となるトラッカーとロールを選択してください'
+   error_can_not_delete_tracker: 'このトラッカーは使用されています。削除できません。'
+ 
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count}個の添付ファイルが保存できませんでした。"
+ 
+   mail_subject_lost_password: "%{value} パスワード再発行"
+diff --git a/config/locales/ko.yml b/config/locales/ko.yml
+index cb6d596..5c6bb3c 100644
+--- a/config/locales/ko.yml
++++ b/config/locales/ko.yml
+@@ -174,6 +174,7 @@ ko:
+         even: "은 짝수여야 합니다"
+         greater_than_start_date: "는 시작날짜보다 커야 합니다"
+         not_same_project: "는 같은 프로젝트에 속해 있지 않습니다"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "이 관계는 순환 의존관계를 만들 수 있습니다"
+         cant_link_an_issue_with_a_descendant: "일감은 하위 일감과 연결할 수 없습니다."
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -222,6 +223,7 @@ ko:
+   error_scm_annotate: "항목이 없거나 행별 이력을 볼 수 없습니다."
+   error_issue_not_found_in_project: '일감이 없거나 이 프로젝트의 것이 아닙니다.'
+ 
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count}개 파일을 저장할 수 없습니다."
+ 
+   mail_subject_lost_password: "%{value} 비밀번호"
+diff --git a/config/locales/lt.yml b/config/locales/lt.yml
+index 4e4469e..a767f94 100644
+--- a/config/locales/lt.yml
++++ b/config/locales/lt.yml
+@@ -186,6 +186,7 @@ lt:
+         even: "turi būti lyginis"
+         greater_than_start_date: "turi būti didesnė negu pradžios data"
+         not_same_project: "nepriklauso tam pačiam projektui"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Šis ryšys sukurtų ciklinę priklausomybę"
+         cant_link_an_issue_with_a_descendant: "Darbas negali būti susietas su viena iš savo darbo dalių"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -254,6 +255,7 @@ lt:
+   error_unable_delete_issue_status: 'Negalima ištrinti darbo statuso'
+   error_unable_to_connect: Negalima prisijungti (%{value})
+   error_attachment_too_big: "Ši byla negali būti įkelta, nes viršija maksimalią (%{max_size}) leistiną bylos apimtį"
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} byla(-ų) negali būti išsaugota."
+ 
+   mail_subject_lost_password: "Jūsų %{value} slaptažodis"
+diff --git a/config/locales/lv.yml b/config/locales/lv.yml
+index 4491793..087bf76 100644
+--- a/config/locales/lv.yml
++++ b/config/locales/lv.yml
+@@ -121,6 +121,7 @@ lv:
+         even: "jāsakrīt"
+         greater_than_start_date: "jābūt vēlākam par sākuma datumu"
+         not_same_project: "nepieder pie tā paša projekta"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Šī relācija radītu ciklisku atkarību"
+         cant_link_an_issue_with_a_descendant: "An issue can not be linked to one of its subtasks"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -178,6 +179,7 @@ lv:
+   error_workflow_copy_source: 'Lūdzu izvēlieties avota trakeri vai lomu'
+   error_workflow_copy_target: 'Lūdzu izvēlēties mērķa trakeri(us) un lomu(as)'
+ 
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} datnes netika saglabātas."
+ 
+   mail_subject_lost_password: "Jūsu %{value} parole"
+diff --git a/config/locales/mk.yml b/config/locales/mk.yml
+index 355dbd5..388eee9 100644
+--- a/config/locales/mk.yml
++++ b/config/locales/mk.yml
+@@ -128,6 +128,7 @@ mk:
+         even: "мора да е парно"
+         greater_than_start_date: "мора да е поголема од почетната дата"
+         not_same_project: "не припаѓа на истиот проект"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Оваа врска ќе креира кружна зависност"
+         cant_link_an_issue_with_a_descendant: "Задача неможе да се поврзе со една од нејзините подзадачи"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -191,6 +192,7 @@ mk:
+   error_workflow_copy_target: 'Please select target tracker(s) and role(s)'
+   error_unable_delete_issue_status: 'Unable to delete issue status'
+   error_unable_to_connect: "Unable to connect (%{value})"
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} file(s) could not be saved."
+ 
+   mail_subject_lost_password: "Вашата %{value} лозинка"
+diff --git a/config/locales/mn.yml b/config/locales/mn.yml
+index 2d63929..eed4a53 100644
+--- a/config/locales/mn.yml
++++ b/config/locales/mn.yml
+@@ -127,6 +127,7 @@ mn:
+         even: "заавал тэгш"
+         greater_than_start_date: "must be greater than start date"
+         not_same_project: "нэг ижил төсөлд хамаарахгүй байна"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Энэ харьцаа нь гинжин(рекурсив) харьцаа үүсгэх юм байна"
+         cant_link_an_issue_with_a_descendant: "An issue can not be linked to one of its subtasks"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -184,6 +185,7 @@ mn:
+   error_workflow_copy_source: 'Please select a source tracker or role'
+   error_workflow_copy_target: 'Please select target tracker(s) and role(s)'
+ 
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} file(s) файлыг хадгалж чадсангүй."
+ 
+   mail_subject_lost_password: "Таны %{value} нууц үг"
+diff --git a/config/locales/nl.yml b/config/locales/nl.yml
+index 4b0c23e..aaf9cef 100644
+--- a/config/locales/nl.yml
++++ b/config/locales/nl.yml
+@@ -125,6 +125,7 @@ nl:
+         even: "moet even zijn"
+         greater_than_start_date: "moet na de startdatum liggen"
+         not_same_project: "hoort niet bij hetzelfde project"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Deze relatie zou een circulaire afhankelijkheid tot gevolg hebben"
+         cant_link_an_issue_with_a_descendant: "Een issue kan niet gelinked worden met een subtask"
+         earlier_than_minimum_start_date: "kan niet eerder zijn dan %{date} wegens voorafgaande issues"
+@@ -699,7 +700,7 @@ nl:
+   setting_bcc_recipients: Blind carbon copy ontvangers (bcc)
+   setting_commit_fix_keywords: Gefixeerde trefwoorden
+   setting_commit_ref_keywords: Refererende trefwoorden
+-  setting_cross_project_issue_relations: Sta cross-project issuerelaties toe
++  setting_cross_project_issue_relations: Sta the cross-project issuerelaties toe
+   setting_date_format: Datumformaat
+   setting_default_language: Standaard taal
+   setting_default_projects_public: Nieuwe projecten zijn standaard publiek
+@@ -774,6 +775,7 @@ nl:
+   text_user_wrote: "%{value} schreef:"
+   text_wiki_destroy_confirmation: Weet u zeker dat u deze wiki en zijn inhoud wenst te verwijderen?
+   text_workflow_edit: Selecteer een rol en een tracker om de workflow te wijzigen
++  error_invalid_parent_issue_id: "Parent task is in another project and cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} bestand(en) konden niet opgeslagen worden."
+   button_create_and_continue: Maak en ga verder
+   text_custom_field_possible_values_info: 'Per lijn een waarde'
+diff --git a/config/locales/no.yml b/config/locales/no.yml
+index 0df6651..f89ae39 100644
+--- a/config/locales/no.yml
++++ b/config/locales/no.yml
+@@ -116,6 +116,7 @@
+         even: "må være partall"
+         greater_than_start_date: "må være større enn startdato"
+         not_same_project: "hører ikke til samme prosjekt"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Denne relasjonen ville lagd en sirkulær avhengighet"
+         cant_link_an_issue_with_a_descendant: "En sak kan ikke kobles mot en av sine undersaker"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -779,6 +780,7 @@
+   text_diff_truncated: '... This diff was truncated because it exceeds the maximum size that can be displayed.'
+   setting_diff_max_lines_displayed: Max number of diff lines displayed
+   text_plugin_assets_writable: Plugin assets directory writable
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} fil(er) kunne ikke lagres."
+   button_create_and_continue: Opprett og fortsett
+   text_custom_field_possible_values_info: 'En linje for hver verdi'
+diff --git a/config/locales/pl.yml b/config/locales/pl.yml
+index cdbf73b..4798563 100644
+--- a/config/locales/pl.yml
++++ b/config/locales/pl.yml
+@@ -135,6 +135,7 @@ pl:
+         even: "musi być parzyste"
+         greater_than_start_date: "musi być większe niż początkowa data"
+         not_same_project: "nie należy do tego samego projektu"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Ta relacja może wytworzyć zapętloną zależność"
+         cant_link_an_issue_with_a_descendant: "Zagadnienie nie może zostać powiązane z jednym z własnych podzagadnień"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -811,6 +812,7 @@ pl:
+   text_diff_truncated: '... Ten plik różnic został przycięty ponieważ jest zbyt długi.'
+   setting_diff_max_lines_displayed: Maksymalna liczba linii różnicy do pokazania
+   text_plugin_assets_writable: Zapisywalny katalog zasobów wtyczek
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} załącznik(ów) nie zostało zapisanych."
+   field_editable: Edytowalne
+   label_display: Wygląd
+diff --git a/config/locales/pt-BR.yml b/config/locales/pt-BR.yml
+index 14acac4..55c10b1 100644
+--- a/config/locales/pt-BR.yml
++++ b/config/locales/pt-BR.yml
+@@ -147,6 +147,7 @@ pt-BR:
+         even: "precisa ser par"
+         greater_than_start_date: "deve ser maior que a data inicial"
+         not_same_project: "não pertence ao mesmo projeto"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Esta relação geraria uma dependência circular"
+         cant_link_an_issue_with_a_descendant: "Uma tarefa não pode ser relaciona a uma de suas subtarefas"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -814,6 +815,7 @@ pt-BR:
+   text_diff_truncated: '... Este diff foi truncado porque excede o tamanho máximo que pode ser exibido.'
+   setting_diff_max_lines_displayed: Número máximo de linhas exibidas no diff
+   text_plugin_assets_writable: Diretório de plugins gravável
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} arquivo(s) não puderam ser salvo(s)."
+   button_create_and_continue: Criar e continuar
+   text_custom_field_possible_values_info: 'Uma linha para cada valor'
+diff --git a/config/locales/pt.yml b/config/locales/pt.yml
+index 8add6bb..7a63bbc 100644
+--- a/config/locales/pt.yml
++++ b/config/locales/pt.yml
+@@ -136,6 +136,7 @@ pt:
+         even: "deve ser par"
+         greater_than_start_date: "deve ser maior que a data inicial"
+         not_same_project: "não pertence ao mesmo projeto"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Esta relação iria criar uma dependência circular"
+         cant_link_an_issue_with_a_descendant: "Não é possível ligar uma tarefa a uma sub-tarefa que lhe é pertencente"
+         earlier_than_minimum_start_date: "não pode ser antes de %{date} devido a tarefas precedentes"
+@@ -798,6 +799,7 @@ pt:
+   text_diff_truncated: '... Este diff foi truncado porque excede o tamanho máximo que pode ser mostrado.'
+   setting_diff_max_lines_displayed: Número máximo de linhas de diff mostradas
+   text_plugin_assets_writable: Escrita na pasta de ativos dos módulos de extensão possível
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "Não foi possível gravar %{count} ficheiro(s) ."
+   button_create_and_continue: Criar e continuar
+   text_custom_field_possible_values_info: 'Uma linha para cada valor'
+diff --git a/config/locales/ro.yml b/config/locales/ro.yml
+index f0009df..99f53ca 100644
+--- a/config/locales/ro.yml
++++ b/config/locales/ro.yml
+@@ -122,6 +122,7 @@ ro:
+         even: "trebuie să fie par"
+         greater_than_start_date: "trebuie să fie după data de început"
+         not_same_project: "trebuie să aparțină aceluiași proiect"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Această relație ar crea o dependență circulară"
+         cant_link_an_issue_with_a_descendant: "An issue can not be linked to one of its subtasks"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -170,6 +171,7 @@ ro:
+   error_scm_annotate: "Nu există sau nu poate fi adnotată."
+   error_issue_not_found_in_project: 'Tichetul nu a fost găsit sau nu aparține acestui proiect'
+ 
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "Nu s-au putut salva %{count} fișiere."
+ 
+   mail_subject_lost_password: "Parola dumneavoastră: %{value}"
+diff --git a/config/locales/ru.yml b/config/locales/ru.yml
+index 8149557..40044e4 100644
+--- a/config/locales/ru.yml
++++ b/config/locales/ru.yml
+@@ -204,6 +204,7 @@ ru:
+         even: "может иметь лишь четное значение"
+         greater_than_start_date: "должна быть позднее даты начала"
+         not_same_project: "не относится к одному проекту"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Такая связь приведет к циклической зависимости"
+         cant_link_an_issue_with_a_descendant: "Задача не может быть связана со своей подзадачей"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -943,6 +944,7 @@ ru:
+   text_wiki_destroy_confirmation: Вы уверены, что хотите удалить данную Wiki и все её содержимое?
+   text_workflow_edit: Выберите роль и трекер для редактирования последовательности состояний
+ 
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} файл(ов) невозможно сохранить."
+   text_wiki_page_destroy_question: Эта страница имеет %{descendants} дочерних страниц и их потомков. Что вы хотите предпринять?
+   text_wiki_page_reassign_children: Переопределить дочерние страницы на текущую страницу
+diff --git a/config/locales/sk.yml b/config/locales/sk.yml
+index 9e250f7..6069332 100644
+--- a/config/locales/sk.yml
++++ b/config/locales/sk.yml
+@@ -126,6 +126,7 @@ sk:
+         even: "musí byť párne"
+         greater_than_start_date: "musí byť neskôr ako počiatočný dátum"
+         not_same_project: "nepatrí k rovnakému projektu"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Tento vzťah by vytvoril cyklickú závislosť"
+         cant_link_an_issue_with_a_descendant: "Nemožno prepojiť úlohu s niektorou z podúloh"
+         earlier_than_minimum_start_date: "nemôže byť skorší ako %{date} z dôvodu nadväznosti na predchádzajúce úlohy"
+@@ -789,6 +790,7 @@ sk:
+   text_diff_truncated: '...Tento výpis rozdielov bol skrátený, pretože prekračuje maximálny počet riadkov, ktorý môže byť zobrazený.'
+   setting_diff_max_lines_displayed: Maximálny počet zobrazených riadkov výpisu rozdielov
+   text_plugin_assets_writable: Povolený zápis do priečinka pre pluginy
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} súborov nemohlo byť uložených."
+   field_editable: Editovateľné
+   label_display: Zobrazenie
+diff --git a/config/locales/sl.yml b/config/locales/sl.yml
+index 8262dbb..37988b6 100644
+--- a/config/locales/sl.yml
++++ b/config/locales/sl.yml
+@@ -126,6 +126,7 @@ sl:
+         even: "mora biti liho"
+         greater_than_start_date: "mora biti kasnejši kot začetni datum"
+         not_same_project: "ne pripada istemu projektu"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Ta odnos bi povzročil krožno odvisnost"
+         cant_link_an_issue_with_a_descendant: "Zahtevek ne more biti povezan s svojo podnalogo"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -788,6 +789,7 @@ sl:
+   enumeration_issue_priorities: Prioritete zahtevkov
+   enumeration_doc_categories: Kategorije dokumentov
+   enumeration_activities: Aktivnosti (sledenje časa)
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} datotek(e) ni bilo mogoče shraniti."
+   field_editable: Uredljivo
+   text_plugin_assets_writable: Zapisljiva mapa za vtičnike
+diff --git a/config/locales/sq.yml b/config/locales/sq.yml
+index c1d8d08..c94f5c1 100644
+--- a/config/locales/sq.yml
++++ b/config/locales/sq.yml
+@@ -127,6 +127,7 @@ sq:
+         even: "duhet te jete cift"
+         greater_than_start_date: "duhet te jete me i/e madh(e) se data e fillimit"
+         not_same_project: "nuk i perket te njejtit projekt"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Ky relacion do te krijoje nje varesi ciklike (circular dependency)"
+         cant_link_an_issue_with_a_descendant: "Nje ceshtje nuk mund te lidhet me nenceshtje"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -198,6 +199,7 @@ sq:
+   error_unable_delete_issue_status: 'Unable to delete issue status'
+   error_unable_to_connect: "Unable to connect (%{value})"
+   error_attachment_too_big: "This file cannot be uploaded because it exceeds the maximum allowed file size (%{max_size})"
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} file(s) could not be saved."
+ 
+   mail_subject_lost_password: "Fjalekalimi %{value} i juaj"
+diff --git a/config/locales/sr-YU.yml b/config/locales/sr-YU.yml
+index 342b8a9..12f4241 100644
+--- a/config/locales/sr-YU.yml
++++ b/config/locales/sr-YU.yml
+@@ -130,6 +130,7 @@ sr-YU:
+         even: "mora biti neparan"
+         greater_than_start_date: "mora biti veći od početnog datuma"
+         not_same_project: "ne pripada istom projektu"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Ova veza će stvoriti kružnu referencu"
+         cant_link_an_issue_with_a_descendant: "Problem ne može biti povezan sa jednim od svojih podzadataka"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -193,6 +194,7 @@ sr-YU:
+   error_workflow_copy_target: 'Molimo odaberite odredišno praćenje i ulogu'
+   error_unable_delete_issue_status: 'Status problema je nemoguće obrisati'
+   error_unable_to_connect: "Povezivanje sa (%{value}) je nemoguće"
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} datoteka ne može biti snimljena."
+ 
+   mail_subject_lost_password: "Vaša %{value} lozinka"
+diff --git a/config/locales/sr.yml b/config/locales/sr.yml
+index 6b8da2b..a12d9bb 100644
+--- a/config/locales/sr.yml
++++ b/config/locales/sr.yml
+@@ -128,6 +128,7 @@ sr:
+         even: "мора бити непаран"
+         greater_than_start_date: "мора бити већи од почетног датума"
+         not_same_project: "не припада истом пројекту"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Ова веза ће створити кружну референцу"
+         cant_link_an_issue_with_a_descendant: "Проблем не може бити повезан са једним од својих подзадатака"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -191,6 +192,7 @@ sr:
+   error_workflow_copy_target: 'Молимо одаберите одредишно праћење и улогу'
+   error_unable_delete_issue_status: 'Статус проблема је немогуће обрисати'
+   error_unable_to_connect: "Повезивање са (%{value}) је немогуће"
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} датотека не може бити снимљена."
+ 
+   mail_subject_lost_password: "Ваша %{value} лозинка"
+diff --git a/config/locales/sv.yml b/config/locales/sv.yml
+index 26de092..ef9497e 100644
+--- a/config/locales/sv.yml
++++ b/config/locales/sv.yml
+@@ -132,6 +132,7 @@ sv:
+         even: "måste vara jämnt"
+         greater_than_start_date: "måste vara senare än startdatumet"
+         not_same_project: "tillhör inte samma projekt"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Denna relation skulle skapa ett cirkulärt beroende"
+         cant_link_an_issue_with_a_descendant: "Ett ärende kan inte länkas till ett av dess underärenden"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -242,6 +243,7 @@ sv:
+   error_unable_to_connect: "Kan inte ansluta (%{value})"
+   error_attachment_too_big: "Denna fil kan inte laddas upp eftersom den överstiger maximalt tillåten filstorlek (%{max_size})"
+   error_session_expired: "Din session har gått ut. Vänligen logga in på nytt."
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} fil(er) kunde inte sparas."
+ 
+   mail_subject_lost_password: "Ditt %{value} lösenord"
+diff --git a/config/locales/th.yml b/config/locales/th.yml
+index ce7a918..18a6578 100644
+--- a/config/locales/th.yml
++++ b/config/locales/th.yml
+@@ -125,6 +125,7 @@ th:
+         even: "must be even"
+         greater_than_start_date: "ต้องมากกว่าวันเริ่ม"
+         not_same_project: "ไม่ได้อยู่ในโครงการเดียวกัน"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "ความสัมพันธ์อ้างอิงเป็นวงกลม"
+         cant_link_an_issue_with_a_descendant: "An issue can not be linked to one of its subtasks"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -789,6 +790,7 @@ th:
+   text_diff_truncated: '... This diff was truncated because it exceeds the maximum size that can be displayed.'
+   setting_diff_max_lines_displayed: Max number of diff lines displayed
+   text_plugin_assets_writable: Plugin assets directory writable
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} file(s) could not be saved."
+   button_create_and_continue: Create and continue
+   text_custom_field_possible_values_info: 'One line for each value'
+diff --git a/config/locales/tr.yml b/config/locales/tr.yml
+index 9a4e258..2a0076b 100644
+--- a/config/locales/tr.yml
++++ b/config/locales/tr.yml
+@@ -141,6 +141,7 @@ tr:
+         even: "çift olmalı"
+         greater_than_start_date: "başlangıç tarihinden büyük olmalı"
+         not_same_project: "aynı projeye ait değil"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Bu ilişki döngüsel bağımlılık meydana getirecektir"
+         cant_link_an_issue_with_a_descendant: "Bir iş, alt işlerinden birine bağlanamaz"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -805,6 +806,7 @@ tr:
+   text_diff_truncated: '... Bu fark tam olarak gösterilemiyor çünkü gösterim için ayarlanmış üst sınırı aşıyor.'
+   setting_diff_max_lines_displayed: Gösterilebilecek maksimumu fark satırı
+   text_plugin_assets_writable: Eklenti yardımcı dosya dizini yazılabilir
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} adet dosya kaydedilemedi."
+   button_create_and_continue: Oluştur ve devam et
+   text_custom_field_possible_values_info: 'Her değer için bir satır'
+diff --git a/config/locales/uk.yml b/config/locales/uk.yml
+index 13a7812..c078013 100644
+--- a/config/locales/uk.yml
++++ b/config/locales/uk.yml
+@@ -125,6 +125,7 @@ uk:
+         even: "must be even"
+         greater_than_start_date: "повинна бути пізніша за дату початку"
+         not_same_project: "не відносяться до одного проекту"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "Такий зв'язок приведе до циклічної залежності"
+         cant_link_an_issue_with_a_descendant: "An issue can not be linked to one of its subtasks"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -789,6 +790,7 @@ uk:
+   text_diff_truncated: '... This diff was truncated because it exceeds the maximum size that can be displayed.'
+   setting_diff_max_lines_displayed: Max number of diff lines displayed
+   text_plugin_assets_writable: Plugin assets directory writable
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} file(s) could not be saved."
+   button_create_and_continue: Create and continue
+   text_custom_field_possible_values_info: 'One line for each value'
+diff --git a/config/locales/vi.yml b/config/locales/vi.yml
+index 15ab79d..a8a4c44 100644
+--- a/config/locales/vi.yml
++++ b/config/locales/vi.yml
+@@ -142,6 +142,7 @@ vi:
+         even: "phải là số lẻ"
+         greater_than_start_date: "phải đi sau ngày bắt đầu"
+         not_same_project: "không thuộc cùng dự án"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "quan hệ có thể gây ra lặp vô tận"
+         cant_link_an_issue_with_a_descendant: "Một vấn đề không thể liên kết tới một trong số những tác vụ con của nó"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -843,6 +844,7 @@ vi:
+   text_diff_truncated: '... Thay đổi này đã được cắt bớt do nó vượt qua giới hạn kích thước có thể hiển thị.'
+   setting_diff_max_lines_displayed: Số dòng thay đổi tối đa được hiển thị
+   text_plugin_assets_writable: Cho phép ghi thư mục Plugin
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} file không được lưu."
+   button_create_and_continue: Tạo và tiếp tục
+   text_custom_field_possible_values_info: 'Một dòng cho mỗi giá trị'
+diff --git a/config/locales/zh-TW.yml b/config/locales/zh-TW.yml
+index 0907a7b..756eff7 100644
+--- a/config/locales/zh-TW.yml
++++ b/config/locales/zh-TW.yml
+@@ -184,6 +184,7 @@
+         # Append your own errors here or at the model/attributes scope.
+         greater_than_start_date: "必須在開始日期之後"
+         not_same_project: "不屬於同一個專案"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "這個關聯會導致環狀相依"
+         cant_link_an_issue_with_a_descendant: "問題無法被連結至自己的子任務"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -287,6 +288,7 @@
+   error_unable_to_connect: "無法連線至（%{value}）"
+   error_attachment_too_big: "這個檔案無法被上傳，因為它已經超過最大的檔案大小 (%{max_size})"
+   error_session_expired: "您的工作階段已經過期。請重新登入。"
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} 個附加檔案無法被儲存。"
+ 
+   mail_subject_lost_password: 您的 Redmine 網站密碼
+diff --git a/config/locales/zh.yml b/config/locales/zh.yml
+index a48b4e3..5635f91 100644
+--- a/config/locales/zh.yml
++++ b/config/locales/zh.yml
+@@ -131,6 +131,7 @@ zh:
+         even: "必须为双数"
+         greater_than_start_date: "必须在起始日期之后"
+         not_same_project: "不属于同一个项目"
++        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
+         circular_dependency: "此关联将导致循环依赖"
+         cant_link_an_issue_with_a_descendant: "问题不能关联到它的子任务"
+         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
+@@ -196,6 +197,7 @@ zh:
+   error_workflow_copy_target: 请选择目标跟踪标签和角色
+   error_unable_delete_issue_status: '无法删除问题状态'
+   error_unable_to_connect: "无法连接 (%{value})"
++  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
+   warning_attachments_not_saved: "%{count} 个文件保存失败"
+ 
+   mail_subject_lost_password: "您的 %{value} 密码"
