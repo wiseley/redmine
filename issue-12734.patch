@@ -1,0 +1,1154 @@
+diff --git a/public/help/ar/wiki_syntax.html b/public/help/ar/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/ar/wiki_syntax.html
++++ b/public/help/ar/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/az/wiki_syntax.html b/public/help/az/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/az/wiki_syntax.html
++++ b/public/help/az/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/bg/wiki_syntax.html b/public/help/bg/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/bg/wiki_syntax.html
++++ b/public/help/bg/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/bs/wiki_syntax.html b/public/help/bs/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/bs/wiki_syntax.html
++++ b/public/help/bs/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/ca/wiki_syntax.html b/public/help/ca/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/ca/wiki_syntax.html
++++ b/public/help/ca/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/cs/wiki_syntax.html b/public/help/cs/wiki_syntax.html
+index 80b4d4c..c12c1cd 100644
+--- a/public/help/cs/wiki_syntax.html
++++ b/public/help/cs/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Vnořené obrázky</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Obrázek" /></th><td>!<em>url_obrázku</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>vnořený_obrázek</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">Více informací</a></p>
+diff --git a/public/help/da/wiki_syntax.html b/public/help/da/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/da/wiki_syntax.html
++++ b/public/help/da/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/de/wiki_syntax.html b/public/help/de/wiki_syntax.html
+index 1ca6cee..c8ab613 100644
+--- a/public/help/de/wiki_syntax.html
++++ b/public/help/de/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">eingebettete Bilder</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Bild" /></th><td>!<em>URL_zu_dem_Bild</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>angeh&auml;ngtes_Bild</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">weitere Informationen</a></p>
+diff --git a/public/help/el/wiki_syntax.html b/public/help/el/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/el/wiki_syntax.html
++++ b/public/help/el/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/en-gb/wiki_syntax.html b/public/help/en-gb/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/en-gb/wiki_syntax.html
++++ b/public/help/en-gb/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/en/wiki_syntax.html b/public/help/en/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/en/wiki_syntax.html
++++ b/public/help/en/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/es/wiki_syntax.html b/public/help/es/wiki_syntax.html
+index 4239ee7..87d434b 100644
+--- a/public/help/es/wiki_syntax.html
++++ b/public/help/es/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -59,6 +61,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Im&aacute;genes en l&iacute;nea</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Imagen" /></th><td>!<em>imagen_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>imagen_adjunta</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">M&aacute;s informaci&oacute;n</a></p>
+diff --git a/public/help/et/wiki_syntax.html b/public/help/et/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/et/wiki_syntax.html
++++ b/public/help/et/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/eu/wiki_syntax.html b/public/help/eu/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/eu/wiki_syntax.html
++++ b/public/help/eu/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/fa/wiki_syntax.html b/public/help/fa/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/fa/wiki_syntax.html
++++ b/public/help/fa/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/fi/wiki_syntax.html b/public/help/fi/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/fi/wiki_syntax.html
++++ b/public/help/fi/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/fr/wiki_syntax.html b/public/help/fr/wiki_syntax.html
+index d3e2678..c8771da 100644
+--- a/public/help/fr/wiki_syntax.html
++++ b/public/help/fr/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Images en ligne</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>url_de_l_image</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>image_en_pièce_jointe</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">Plus d'informations</a></p>
+diff --git a/public/help/gl/wiki_syntax.html b/public/help/gl/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/gl/wiki_syntax.html
++++ b/public/help/gl/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/he/wiki_syntax.html b/public/help/he/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/he/wiki_syntax.html
++++ b/public/help/he/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/hr/wiki_syntax.html b/public/help/hr/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/hr/wiki_syntax.html
++++ b/public/help/hr/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/hu/wiki_syntax.html b/public/help/hu/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/hu/wiki_syntax.html
++++ b/public/help/hu/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/id/wiki_syntax.html b/public/help/id/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/id/wiki_syntax.html
++++ b/public/help/id/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/it/wiki_syntax.html b/public/help/it/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/it/wiki_syntax.html
++++ b/public/help/it/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/ja/wiki_syntax.html b/public/help/ja/wiki_syntax.html
+index e386249..bea3862 100644
+--- a/public/help/ja/wiki_syntax.html
++++ b/public/help/ja/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">画像</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>画像URL</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>添付ファイル名</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">より詳細なリファレンス</a></p>
+diff --git a/public/help/ko/wiki_syntax.html b/public/help/ko/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/ko/wiki_syntax.html
++++ b/public/help/ko/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/lt/wiki_syntax.html b/public/help/lt/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/lt/wiki_syntax.html
++++ b/public/help/lt/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/lv/wiki_syntax.html b/public/help/lv/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/lv/wiki_syntax.html
++++ b/public/help/lv/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/mk/wiki_syntax.html b/public/help/mk/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/mk/wiki_syntax.html
++++ b/public/help/mk/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/mn/wiki_syntax.html b/public/help/mn/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/mn/wiki_syntax.html
++++ b/public/help/mn/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/nl/wiki_syntax.html b/public/help/nl/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/nl/wiki_syntax.html
++++ b/public/help/nl/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/no/wiki_syntax.html b/public/help/no/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/no/wiki_syntax.html
++++ b/public/help/no/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/pl/wiki_syntax.html b/public/help/pl/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/pl/wiki_syntax.html
++++ b/public/help/pl/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/pt-br/wiki_syntax.html b/public/help/pt-br/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/pt-br/wiki_syntax.html
++++ b/public/help/pt-br/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/pt/wiki_syntax.html b/public/help/pt/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/pt/wiki_syntax.html
++++ b/public/help/pt/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/ro/wiki_syntax.html b/public/help/ro/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/ro/wiki_syntax.html
++++ b/public/help/ro/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/ru/wiki_syntax.html b/public/help/ru/wiki_syntax.html
+index a12fede..120249f 100644
+--- a/public/help/ru/wiki_syntax.html
++++ b/public/help/ru/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -163,7 +165,11 @@ table td h3 { font-size: 1.2em; text-align: left; }
+         <td>!<em>вложенный_файл</em>!</td>
+         <td></td>
+     </tr>
+-</table>
++
++	</ta<tr><th colspan="3">Tables</th></tr>
++	<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
++ble>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">Больше информации</a></p>
+ 
+diff --git a/public/help/sk/wiki_syntax.html b/public/help/sk/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/sk/wiki_syntax.html
++++ b/public/help/sk/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/sl/wiki_syntax.html b/public/help/sl/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/sl/wiki_syntax.html
++++ b/public/help/sl/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/sq/wiki_syntax.html b/public/help/sq/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/sq/wiki_syntax.html
++++ b/public/help/sq/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/sr-yu/wiki_syntax.html b/public/help/sr-yu/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/sr-yu/wiki_syntax.html
++++ b/public/help/sr-yu/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/sr/wiki_syntax.html b/public/help/sr/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/sr/wiki_syntax.html
++++ b/public/help/sr/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/sv/wiki_syntax.html b/public/help/sv/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/sv/wiki_syntax.html
++++ b/public/help/sv/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/th/wiki_syntax.html b/public/help/th/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/th/wiki_syntax.html
++++ b/public/help/th/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/tr/wiki_syntax.html b/public/help/tr/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/tr/wiki_syntax.html
++++ b/public/help/tr/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/uk/wiki_syntax.html b/public/help/uk/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/uk/wiki_syntax.html
++++ b/public/help/uk/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/vi/wiki_syntax.html b/public/help/vi/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/vi/wiki_syntax.html
++++ b/public/help/vi/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
+diff --git a/public/help/zh-tw/wiki_syntax.html b/public/help/zh-tw/wiki_syntax.html
+index 5669d14..5a30622 100644
+--- a/public/help/zh-tw/wiki_syntax.html
++++ b/public/help/zh-tw/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">內置圖像</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="圖像" /></th><td>!<em>圖像_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>附加_圖像</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">更多資訊</a></p>
+diff --git a/public/help/zh/wiki_syntax.html b/public/help/zh/wiki_syntax.html
+index d67dc88..07e239f 100644
+--- a/public/help/zh/wiki_syntax.html
++++ b/public/help/zh/wiki_syntax.html
+@@ -14,6 +14,8 @@ table td h1 { font-size: 1.8em; text-align: left; }
+ table td h2 { font-size: 1.4em; text-align: left; }
+ table td h3 { font-size: 1.2em; text-align: left; }
+ 
++table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample th, table.sample td { border: solid 1px #bbb; }
+ </style>
+ </head>
+ <body>
+@@ -58,6 +60,10 @@ table td h3 { font-size: 1.2em; text-align: left; }
+ <tr><th colspan="3">Inline images</th></tr>
+ <tr><th><img src="../../images/jstoolbar/bt_img.png" style="border: 1px solid #bbb;" alt="Image" /></th><td>!<em>image_url</em>!</td><td></td></tr>
+ <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
++
++<tr><th colspan="3">Tables</th></tr>
++<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++
+ </table>
+ 
+ <p><a href="wiki_syntax_detailed.html" onclick="window.open('wiki_syntax_detailed.html', '', ''); return false;">More Information</a></p>
