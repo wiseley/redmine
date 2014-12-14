@@ -194,6 +194,7 @@ az:
         even: "yalnız cüt təyinata malik ola bilər"
         greater_than_start_date: "başlanğıc tarixindən sonra olmalıdır"
         not_same_project: "təkcə bir layihəyə aid deyildir"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "Belə əlaqə dövri asılılığa gətirib çıxaracaq"
         cant_link_an_issue_with_a_descendant: "Tapşırıq özünün alt tapşırığı ilə əlaqəli ola bilməz"
         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
@@ -933,6 +934,7 @@ az:
   text_wiki_destroy_confirmation: Siz bu Wiki və onun tərkibindəkiləri silmək istədiyinizə əminsinizmi?
   text_workflow_edit: Vəziyyətlərin ardıcıllığını redaktə etmək üçün rol və trekeri seçin
 
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "faylın (ların) %{count} yadda saxlamaq mümkün deyildir."
   text_wiki_page_destroy_question: Bu səhifə %{descendants} yaxın və çox yaxın səhifələrə malikdir. Siz nə etmək istəyirsiniz?
   text_wiki_page_reassign_children: Cari səhifə üçün yaxın səhifələri yenidən təyin etmək

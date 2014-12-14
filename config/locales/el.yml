@@ -128,6 +128,7 @@ el:
         even: "πρέπει να είναι ζυγός"
         greater_than_start_date: "πρέπει να είναι αργότερα από την ημερομηνία έναρξης"
         not_same_project: "δεν ανήκει στο ίδιο έργο"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "Αυτή η σχέση θα δημιουργήσει κυκλικές εξαρτήσεις"
         cant_link_an_issue_with_a_descendant: "An issue can not be linked to one of its subtasks"
         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
@@ -178,6 +179,7 @@ el:
   error_no_tracker_in_project: 'Δεν υπάρχει ανιχνευτής για αυτό το έργο. Παρακαλώ ελέγξτε τις ρυθμίσεις του έργου.'
   error_no_default_issue_status: 'Δεν έχει οριστεί η προεπιλογή  κατάστασης θεμάτων. Παρακαλώ ελέγξτε τις ρυθμίσεις σας (Μεταβείτε στην  "Διαχείριση -> Κατάσταση θεμάτων").'
 
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "%{count} αρχείο(α) δε μπορούν να αποθηκευτούν."
 
   mail_subject_lost_password: "Ο κωδικός σας %{value}"

@@ -135,6 +135,7 @@ es:
         even: "debe ser par"
         greater_than_start_date: "debe ser posterior a la fecha de comienzo"
         not_same_project: "no pertenece al mismo proyecto"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "Esta relación podría crear una dependencia circular"
         cant_link_an_issue_with_a_descendant: "Esta petición no puede ser ligada a una de estas tareas"
         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
@@ -829,6 +830,7 @@ es:
   text_wiki_destroy_confirmation: ¿Seguro que quiere borrar el wiki y todo su contenido?
   text_workflow_edit: Seleccionar un flujo de trabajo para actualizar
   text_plugin_assets_writable: Se puede escribir en el directorio público de las extensiones
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "No se han podido grabar %{count} ficheros."
   button_create_and_continue: Crear y continuar
   text_custom_field_possible_values_info: 'Un valor en cada línea'

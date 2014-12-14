@@ -139,6 +139,7 @@ da:
         even: "skal være lige"
         greater_than_start_date: "skal være senere end startdatoen"
         not_same_project: "hører ikke til samme projekt"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "Denne relation vil skabe et afhængighedsforhold"
         cant_link_an_issue_with_a_descendant: "En sag kan ikke relateres til en af dens underopgaver"
         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
@@ -755,6 +756,7 @@ da:
   text_email_delivery_not_configured: "Email-afsendelse er ikke indstillet og notifikationer er defor slået fra.\nKonfigurér din SMTP server i config/configuration.yml og genstart applikationen for at aktivere email-afsendelse."
   permission_protect_wiki_pages: Beskyt wiki sider
   permission_add_issue_watchers: Tilføj overvågere
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "der var %{count} fil(er), som ikke kunne gemmes."
   permission_comment_news: Kommentér nyheder
   text_enumeration_category_reassign_to: 'Flyt dem til denne værdi:'

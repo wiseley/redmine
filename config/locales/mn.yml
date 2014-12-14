@@ -127,6 +127,7 @@ mn:
         even: "заавал тэгш"
         greater_than_start_date: "must be greater than start date"
         not_same_project: "нэг ижил төсөлд хамаарахгүй байна"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "Энэ харьцаа нь гинжин(рекурсив) харьцаа үүсгэх юм байна"
         cant_link_an_issue_with_a_descendant: "An issue can not be linked to one of its subtasks"
         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
@@ -184,6 +185,7 @@ mn:
   error_workflow_copy_source: 'Please select a source tracker or role'
   error_workflow_copy_target: 'Please select target tracker(s) and role(s)'
 
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "%{count} file(s) файлыг хадгалж чадсангүй."
 
   mail_subject_lost_password: "Таны %{value} нууц үг"

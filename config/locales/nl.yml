@@ -125,6 +125,7 @@ nl:
         even: "moet even zijn"
         greater_than_start_date: "moet na de startdatum liggen"
         not_same_project: "hoort niet bij hetzelfde project"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "Deze relatie zou een circulaire afhankelijkheid tot gevolg hebben"
         cant_link_an_issue_with_a_descendant: "Een issue kan niet gelinked worden met een subtask"
         earlier_than_minimum_start_date: "kan niet eerder zijn dan %{date} wegens voorafgaande issues"
@@ -699,7 +700,7 @@ nl:
   setting_bcc_recipients: Blind carbon copy ontvangers (bcc)
   setting_commit_fix_keywords: Gefixeerde trefwoorden
   setting_commit_ref_keywords: Refererende trefwoorden
-  setting_cross_project_issue_relations: Sta cross-project issuerelaties toe
+  setting_cross_project_issue_relations: Sta the cross-project issuerelaties toe
   setting_date_format: Datumformaat
   setting_default_language: Standaard taal
   setting_default_projects_public: Nieuwe projecten zijn standaard publiek
@@ -774,6 +775,7 @@ nl:
   text_user_wrote: "%{value} schreef:"
   text_wiki_destroy_confirmation: Weet u zeker dat u deze wiki en zijn inhoud wenst te verwijderen?
   text_workflow_edit: Selecteer een rol en een tracker om de workflow te wijzigen
+  error_invalid_parent_issue_id: "Parent task is in another project and cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "%{count} bestand(en) konden niet opgeslagen worden."
   button_create_and_continue: Maak en ga verder
   text_custom_field_possible_values_info: 'Per lijn een waarde'

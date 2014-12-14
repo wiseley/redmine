@@ -136,6 +136,7 @@ pt:
         even: "deve ser par"
         greater_than_start_date: "deve ser maior que a data inicial"
         not_same_project: "não pertence ao mesmo projeto"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "Esta relação iria criar uma dependência circular"
         cant_link_an_issue_with_a_descendant: "Não é possível ligar uma tarefa a uma sub-tarefa que lhe é pertencente"
         earlier_than_minimum_start_date: "não pode ser antes de %{date} devido a tarefas precedentes"
@@ -798,6 +799,7 @@ pt:
   text_diff_truncated: '... Este diff foi truncado porque excede o tamanho máximo que pode ser mostrado.'
   setting_diff_max_lines_displayed: Número máximo de linhas de diff mostradas
   text_plugin_assets_writable: Escrita na pasta de ativos dos módulos de extensão possível
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "Não foi possível gravar %{count} ficheiro(s) ."
   button_create_and_continue: Criar e continuar
   text_custom_field_possible_values_info: 'Uma linha para cada valor'

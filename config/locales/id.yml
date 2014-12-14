@@ -127,6 +127,7 @@ id:
         even: "harus genap"
         greater_than_start_date: "harus lebih besar dari tanggal mulai"
         not_same_project: "tidak tergabung dalam proyek yang sama"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "kaitan ini akan menghasilkan circular dependency"
         cant_link_an_issue_with_a_descendant: "An issue can not be linked to one of its subtasks"
         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
@@ -179,6 +180,7 @@ id:
   error_can_not_reopen_issue_on_closed_version: 'Masalah yang ditujukan pada versi tertutup tidak bisa dibuka kembali'
   error_can_not_archive_project: Proyek ini tidak bisa diarsipkan
 
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "%{count} berkas tidak bisa disimpan."
 
   mail_subject_lost_password: "Kata sandi %{value} anda"

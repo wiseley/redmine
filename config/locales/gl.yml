@@ -156,6 +156,7 @@ gl:
         even: "debe ser impar"
         greater_than_start_date: "debe ser posterior á data de comezo"
         not_same_project: "non pertence ao mesmo proxecto"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "Esta relación podería crear unha dependencia circular"
         cant_link_an_issue_with_a_descendant: "As peticións non poden estar ligadas coas súas subtarefas"
         earlier_than_minimum_start_date: "Non pode ser antes de %{date} por mor de peticións anteriores"
@@ -804,6 +805,7 @@ gl:
   text_user_wrote: "%{value} escribiu:"
   text_wiki_destroy_confirmation: Seguro que quere borrar o wiki e todo o seu contido?
   text_workflow_edit: Seleccionar un fluxo de traballo para actualizar
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "Non foi posíbel gardar %{count} ficheiros."
   field_editable: "Editábel"
   text_plugin_assets_writable: "Ten permisos de escritura no cartafol de recursos do complemento."

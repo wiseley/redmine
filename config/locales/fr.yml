@@ -147,6 +147,7 @@ fr:
         even: "doit être pair"
         greater_than_start_date: "doit être postérieure à la date de début"
         not_same_project: "n'appartient pas au même projet"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "Cette relation créerait une dépendance circulaire"
         cant_link_an_issue_with_a_descendant: "Une demande ne peut pas être liée à l'une de ses sous-tâches"
         earlier_than_minimum_start_date: "ne peut pas être antérieure au %{date} à cause des demandes qui précèdent"
@@ -223,6 +224,7 @@ fr:
   error_unable_to_connect: Connexion impossible (%{value})
   error_attachment_too_big: Ce fichier ne peut pas être attaché car il excède la taille maximale autorisée (%{max_size})
   error_session_expired: "Votre session a expiré. Veuillez vous reconnecter."
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "%{count} fichier(s) n'ont pas pu être sauvegardés."
 
   mail_subject_lost_password: "Votre mot de passe %{value}"

@@ -128,6 +128,7 @@ sr:
         even: "мора бити непаран"
         greater_than_start_date: "мора бити већи од почетног датума"
         not_same_project: "не припада истом пројекту"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "Ова веза ће створити кружну референцу"
         cant_link_an_issue_with_a_descendant: "Проблем не може бити повезан са једним од својих подзадатака"
         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
@@ -191,6 +192,7 @@ sr:
   error_workflow_copy_target: 'Молимо одаберите одредишно праћење и улогу'
   error_unable_delete_issue_status: 'Статус проблема је немогуће обрисати'
   error_unable_to_connect: "Повезивање са (%{value}) је немогуће"
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "%{count} датотека не може бити снимљена."
 
   mail_subject_lost_password: "Ваша %{value} лозинка"

@@ -135,6 +135,7 @@ pl:
         even: "musi być parzyste"
         greater_than_start_date: "musi być większe niż początkowa data"
         not_same_project: "nie należy do tego samego projektu"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "Ta relacja może wytworzyć zapętloną zależność"
         cant_link_an_issue_with_a_descendant: "Zagadnienie nie może zostać powiązane z jednym z własnych podzagadnień"
         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
@@ -811,6 +812,7 @@ pl:
   text_diff_truncated: '... Ten plik różnic został przycięty ponieważ jest zbyt długi.'
   setting_diff_max_lines_displayed: Maksymalna liczba linii różnicy do pokazania
   text_plugin_assets_writable: Zapisywalny katalog zasobów wtyczek
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "%{count} załącznik(ów) nie zostało zapisanych."
   field_editable: Edytowalne
   label_display: Wygląd

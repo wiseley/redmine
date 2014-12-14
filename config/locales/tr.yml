@@ -141,6 +141,7 @@ tr:
         even: "çift olmalı"
         greater_than_start_date: "başlangıç tarihinden büyük olmalı"
         not_same_project: "aynı projeye ait değil"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "Bu ilişki döngüsel bağımlılık meydana getirecektir"
         cant_link_an_issue_with_a_descendant: "Bir iş, alt işlerinden birine bağlanamaz"
         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
@@ -805,6 +806,7 @@ tr:
   text_diff_truncated: '... Bu fark tam olarak gösterilemiyor çünkü gösterim için ayarlanmış üst sınırı aşıyor.'
   setting_diff_max_lines_displayed: Gösterilebilecek maksimumu fark satırı
   text_plugin_assets_writable: Eklenti yardımcı dosya dizini yazılabilir
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "%{count} adet dosya kaydedilemedi."
   button_create_and_continue: Oluştur ve devam et
   text_custom_field_possible_values_info: 'Her değer için bir satır'

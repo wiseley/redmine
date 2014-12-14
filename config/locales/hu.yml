@@ -148,6 +148,7 @@
         even: "páros kell legyen"
         greater_than_start_date: "nagyobbnak kell lennie, mint az indítás dátuma"
         not_same_project: "nem azonos projekthez tartozik"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "Ez a kapcsolat egy körkörös függőséget eredményez"
         cant_link_an_issue_with_a_descendant: "An issue can not be linked to one of its subtasks"
         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
@@ -811,6 +812,7 @@
   text_diff_truncated: '... A diff fájl vége nem jelenik meg, mert hosszab, mint a megjeleníthető sorok száma.'
   setting_diff_max_lines_displayed: A megjelenítendő sorok száma (maximum) a diff fájloknál
   text_plugin_assets_writable: Plugin eszközök könyvtár írható
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "%{count} fájl mentése nem sikerült."
   button_create_and_continue: Létrehozás és folytatás
   text_custom_field_possible_values_info: 'Értékenként egy sor'

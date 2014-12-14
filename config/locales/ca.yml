@@ -130,6 +130,7 @@ ca:
         even: "ha de ser parell"
         greater_than_start_date: "ha de ser superior que la data inicial"
         not_same_project: "no pertany al mateix projecte"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "Aquesta relació crearia una dependència circular"
         cant_link_an_issue_with_a_descendant: "Un assumpte no es pot enllaçar a una de les seves subtasques"
         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
@@ -193,6 +194,7 @@ ca:
   error_workflow_copy_target: "Seleccioneu seguidors i rols objectiu"
   error_unable_delete_issue_status: "No s'ha pogut suprimir l'estat de l'assumpte"
   error_unable_to_connect: "No s'ha pogut connectar (%{value})"
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "No s'han pogut desar %{count} fitxers."
 
   mail_subject_lost_password: "Contrasenya de %{value}"

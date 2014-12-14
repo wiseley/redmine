@@ -148,6 +148,7 @@ ja:
         even: "は偶数にしてください。"
         greater_than_start_date: "を開始日より後にしてください。"
         not_same_project: "同じプロジェクトに属していません。"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "この関係では、循環依存になります。"
         cant_link_an_issue_with_a_descendant: "親子関係にあるチケット間での関連の設定はできません。"
         earlier_than_minimum_start_date: "を%{date}より前にすることはできません。先行するチケットがあります。"
@@ -214,6 +215,7 @@ ja:
   error_workflow_copy_target: 'コピー先となるトラッカーとロールを選択してください'
   error_can_not_delete_tracker: 'このトラッカーは使用されています。削除できません。'
 
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "%{count}個の添付ファイルが保存できませんでした。"
 
   mail_subject_lost_password: "%{value} パスワード再発行"

@@ -126,6 +126,7 @@ ar:
         even: "must be even"
         greater_than_start_date: "يجب ان تكون اكثر من تاريخ البداية"
         not_same_project: "لا ينتمي الى نفس المشروع"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "هذه العلاقة سوف تخلق علاقة تبعية دائرية"
         cant_link_an_issue_with_a_descendant: "لا يمكن ان تكون المشكلة مرتبطة بواحدة من المهام الفرعية"
         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
@@ -195,6 +196,7 @@ ar:
   error_unable_delete_issue_status: 'غير قادر على حذف حالة بند العمل'
   error_unable_to_connect: "تعذر الاتصال(%{value})"
   error_attachment_too_big: " (%{max_size})لا يمكن تحميل هذا الملف، لقد تجاوز الحد الاقصى المسموح به "
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "%{count}تعذر حفظ الملف"
 
   mail_subject_lost_password: " %{value}كلمة المرور الخاصة بك "

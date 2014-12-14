@@ -144,6 +144,7 @@ et:
         even: "peab olema paarisarv"
         greater_than_start_date: "peab olema suurem kui alguskuupäev"
         not_same_project: "ei kuulu sama projekti juurde"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "See suhe looks vastastikuse sõltuvuse"
         cant_link_an_issue_with_a_descendant: "Teemat ei saa sidustada tema enda alamteemaga"
         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
@@ -215,6 +216,7 @@ et:
   error_unable_delete_issue_status: "Oleku kustutamine ei õnnestunud"
   error_unable_to_connect: "Ühenduse loomine ei õnnestunud (%{value})"
   error_attachment_too_big: "Faili ei saa üles laadida, sest see on lubatust (%{max_size}) pikem"
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "%{count} faili salvestamine ei õnnestunud."
 
   mail_subject_lost_password: "Sinu %{value} parool"

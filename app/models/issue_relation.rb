@@ -99,7 +99,7 @@ class IssueRelation < ActiveRecord::Base
       errors.add :issue_to_id, :invalid if issue_from_id == issue_to_id
       unless issue_from.project_id == issue_to.project_id ||
                 Setting.cross_project_issue_relations?
-        errors.add :issue_to_id, :not_same_project
+        errors.add :issue_to_id, :cannot_relate_issues
       end
       # detect circular dependencies depending wether the relation should be reversed
       if TYPES.has_key?(relation_type) && TYPES[relation_type][:reverse]

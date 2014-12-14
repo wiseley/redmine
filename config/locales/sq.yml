@@ -127,6 +127,7 @@ sq:
         even: "duhet te jete cift"
         greater_than_start_date: "duhet te jete me i/e madh(e) se data e fillimit"
         not_same_project: "nuk i perket te njejtit projekt"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "Ky relacion do te krijoje nje varesi ciklike (circular dependency)"
         cant_link_an_issue_with_a_descendant: "Nje ceshtje nuk mund te lidhet me nenceshtje"
         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
@@ -198,6 +199,7 @@ sq:
   error_unable_delete_issue_status: 'Unable to delete issue status'
   error_unable_to_connect: "Unable to connect (%{value})"
   error_attachment_too_big: "This file cannot be uploaded because it exceeds the maximum allowed file size (%{max_size})"
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "%{count} file(s) could not be saved."
 
   mail_subject_lost_password: "Fjalekalimi %{value} i juaj"

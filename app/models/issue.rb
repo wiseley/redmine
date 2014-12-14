@@ -617,7 +617,7 @@ class Issue < ActiveRecord::Base
       errors.add :parent_issue_id, :invalid
     elsif @parent_issue
       if !valid_parent_project?(@parent_issue)
-        errors.add :parent_issue_id, :invalid
+        errors.add :base, I18n.t(:error_invalid_parent_issue_id) 
       elsif (@parent_issue != parent) && (all_dependent_issues.include?(@parent_issue) || @parent_issue.all_dependent_issues.include?(self))
         errors.add :parent_issue_id, :invalid
       elsif !new_record?

@@ -132,6 +132,7 @@ it:
         even: "deve essere pari"
         greater_than_start_date: "deve essere maggiore della data di partenza"
         not_same_project: "non appartiene allo stesso progetto"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "Questa relazione creerebbe una dipendenza circolare"
         cant_link_an_issue_with_a_descendant: "Una segnalazione non può essere collegata a una delle sue discendenti"
         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
@@ -792,6 +793,7 @@ it:
   text_diff_truncated: '... Le differenze sono state troncate perchè superano il limite massimo visualizzabile.'
   setting_diff_max_lines_displayed: Limite massimo di differenze (linee) mostrate
   text_plugin_assets_writable: Directory attività dei plugins scrivibile
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "%{count} file non possono essere salvati."
   button_create_and_continue: Crea e continua
   text_custom_field_possible_values_info: 'Un valore per ogni riga'

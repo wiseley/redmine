@@ -130,6 +130,7 @@ sr-YU:
         even: "mora biti neparan"
         greater_than_start_date: "mora biti veći od početnog datuma"
         not_same_project: "ne pripada istom projektu"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "Ova veza će stvoriti kružnu referencu"
         cant_link_an_issue_with_a_descendant: "Problem ne može biti povezan sa jednim od svojih podzadataka"
         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
@@ -193,6 +194,7 @@ sr-YU:
   error_workflow_copy_target: 'Molimo odaberite odredišno praćenje i ulogu'
   error_unable_delete_issue_status: 'Status problema je nemoguće obrisati'
   error_unable_to_connect: "Povezivanje sa (%{value}) je nemoguće"
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "%{count} datoteka ne može biti snimljena."
 
   mail_subject_lost_password: "Vaša %{value} lozinka"

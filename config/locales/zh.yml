@@ -131,6 +131,7 @@ zh:
         even: "必须为双数"
         greater_than_start_date: "必须在起始日期之后"
         not_same_project: "不属于同一个项目"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "此关联将导致循环依赖"
         cant_link_an_issue_with_a_descendant: "问题不能关联到它的子任务"
         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
@@ -196,6 +197,7 @@ zh:
   error_workflow_copy_target: 请选择目标跟踪标签和角色
   error_unable_delete_issue_status: '无法删除问题状态'
   error_unable_to_connect: "无法连接 (%{value})"
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "%{count} 个文件保存失败"
 
   mail_subject_lost_password: "您的 %{value} 密码"

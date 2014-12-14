@@ -122,6 +122,7 @@ ro:
         even: "trebuie să fie par"
         greater_than_start_date: "trebuie să fie după data de început"
         not_same_project: "trebuie să aparțină aceluiași proiect"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "Această relație ar crea o dependență circulară"
         cant_link_an_issue_with_a_descendant: "An issue can not be linked to one of its subtasks"
         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
@@ -170,6 +171,7 @@ ro:
   error_scm_annotate: "Nu există sau nu poate fi adnotată."
   error_issue_not_found_in_project: 'Tichetul nu a fost găsit sau nu aparține acestui proiect'
 
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "Nu s-au putut salva %{count} fișiere."
 
   mail_subject_lost_password: "Parola dumneavoastră: %{value}"

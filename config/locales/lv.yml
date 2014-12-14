@@ -121,6 +121,7 @@ lv:
         even: "jāsakrīt"
         greater_than_start_date: "jābūt vēlākam par sākuma datumu"
         not_same_project: "nepieder pie tā paša projekta"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "Šī relācija radītu ciklisku atkarību"
         cant_link_an_issue_with_a_descendant: "An issue can not be linked to one of its subtasks"
         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
@@ -178,6 +179,7 @@ lv:
   error_workflow_copy_source: 'Lūdzu izvēlieties avota trakeri vai lomu'
   error_workflow_copy_target: 'Lūdzu izvēlēties mērķa trakeri(us) un lomu(as)'
 
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "%{count} datnes netika saglabātas."
 
   mail_subject_lost_password: "Jūsu %{value} parole"

@@ -128,6 +128,7 @@ bg:
         even: "трябва да бъде четен[a/o]"
         greater_than_start_date: "трябва да е след началната дата"
         not_same_project: "не е от същия проект"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "Тази релация ще доведе до безкрайна зависимост"
         cant_link_an_issue_with_a_descendant: "Една задача не може да бъде свързвана към своя подзадача"
         earlier_than_minimum_start_date: "не може да бъде по-рано от %{date} поради предхождащи задачи"
@@ -206,6 +207,7 @@ bg:
   error_unable_to_connect: Невъзможност за свързване с (%{value})
   error_attachment_too_big: Този файл не може да бъде качен, понеже надхвърля максималната възможна големина (%{max_size})
   error_session_expired: Вашата сесия е изтекла. Моля влезете в Redmine отново.
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "%{count} файла не бяха записани."
 
   mail_subject_lost_password: "Вашата парола (%{value})"

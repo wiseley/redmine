@@ -142,6 +142,7 @@ vi:
         even: "phải là số lẻ"
         greater_than_start_date: "phải đi sau ngày bắt đầu"
         not_same_project: "không thuộc cùng dự án"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "quan hệ có thể gây ra lặp vô tận"
         cant_link_an_issue_with_a_descendant: "Một vấn đề không thể liên kết tới một trong số những tác vụ con của nó"
         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
@@ -843,6 +844,7 @@ vi:
   text_diff_truncated: '... Thay đổi này đã được cắt bớt do nó vượt qua giới hạn kích thước có thể hiển thị.'
   setting_diff_max_lines_displayed: Số dòng thay đổi tối đa được hiển thị
   text_plugin_assets_writable: Cho phép ghi thư mục Plugin
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "%{count} file không được lưu."
   button_create_and_continue: Tạo và tiếp tục
   text_custom_field_possible_values_info: 'Một dòng cho mỗi giá trị'

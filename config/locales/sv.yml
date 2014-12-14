@@ -132,6 +132,7 @@ sv:
         even: "måste vara jämnt"
         greater_than_start_date: "måste vara senare än startdatumet"
         not_same_project: "tillhör inte samma projekt"
+        cannot_relate_issues: "doesn't belong to the same project. Cross-project issue relations are disabled in the system settings. Contact an administrator to change that."
         circular_dependency: "Denna relation skulle skapa ett cirkulärt beroende"
         cant_link_an_issue_with_a_descendant: "Ett ärende kan inte länkas till ett av dess underärenden"
         earlier_than_minimum_start_date: "cannot be earlier than %{date} because of preceding issues"
@@ -242,6 +243,7 @@ sv:
   error_unable_to_connect: "Kan inte ansluta (%{value})"
   error_attachment_too_big: "Denna fil kan inte laddas upp eftersom den överstiger maximalt tillåten filstorlek (%{max_size})"
   error_session_expired: "Din session har gått ut. Vänligen logga in på nytt."
+  error_invalid_parent_issue_id: "Parent task is in another project and the cross-project subtasks administrative setting disallows this relationship."
   warning_attachments_not_saved: "%{count} fil(er) kunde inte sparas."
 
   mail_subject_lost_password: "Ditt %{value} lösenord"
