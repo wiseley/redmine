@@ -6,7 +6,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -17,7 +17,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -30,7 +30,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -41,7 +41,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -54,7 +54,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -65,7 +65,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -78,7 +78,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -89,7 +89,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -102,7 +102,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -113,7 +113,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -126,7 +126,7 @@ index 80b4d4c..c12c1cd 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -137,7 +137,7 @@ index 80b4d4c..c12c1cd 100644
  <tr><th></th><td>!<em>vnořený_obrázek</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -150,7 +150,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -161,7 +161,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -174,7 +174,7 @@ index 1ca6cee..c8ab613 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -185,7 +185,7 @@ index 1ca6cee..c8ab613 100644
  <tr><th></th><td>!<em>angeh&auml;ngtes_Bild</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -198,7 +198,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -209,7 +209,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -222,7 +222,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -233,7 +233,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -246,7 +246,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -257,7 +257,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -270,7 +270,7 @@ index 4239ee7..87d434b 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -281,7 +281,7 @@ index 4239ee7..87d434b 100644
  <tr><th></th><td>!<em>imagen_adjunta</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -294,7 +294,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -305,7 +305,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -318,7 +318,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -329,7 +329,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -342,7 +342,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -353,7 +353,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -366,7 +366,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -377,7 +377,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -390,7 +390,7 @@ index d3e2678..c8771da 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -401,7 +401,7 @@ index d3e2678..c8771da 100644
  <tr><th></th><td>!<em>image_en_pièce_jointe</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -414,7 +414,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -425,7 +425,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -438,7 +438,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -449,7 +449,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -462,7 +462,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -473,7 +473,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -486,7 +486,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -497,7 +497,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -510,7 +510,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -521,7 +521,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -534,7 +534,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -545,7 +545,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -558,7 +558,7 @@ index e386249..bea3862 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -569,7 +569,7 @@ index e386249..bea3862 100644
  <tr><th></th><td>!<em>添付ファイル名</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -582,7 +582,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -593,7 +593,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -606,7 +606,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -617,7 +617,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -630,7 +630,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -641,7 +641,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -654,7 +654,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -665,7 +665,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -678,7 +678,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -689,7 +689,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -702,7 +702,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -713,7 +713,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -726,7 +726,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -737,7 +737,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -750,7 +750,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -761,7 +761,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -774,7 +774,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -785,7 +785,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -798,7 +798,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -809,7 +809,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -822,7 +822,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -833,7 +833,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -846,7 +846,7 @@ index a12fede..120249f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -858,7 +858,7 @@ index a12fede..120249f 100644
 -</table>
 +
 +	</ta<tr><th colspan="3">Tables</th></tr>
-+	<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++	<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
 +ble>
  
@@ -872,7 +872,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -883,7 +883,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -896,7 +896,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -907,7 +907,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -920,7 +920,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -931,7 +931,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -944,7 +944,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -955,7 +955,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -968,7 +968,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -979,7 +979,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -992,7 +992,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -1003,7 +1003,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -1016,7 +1016,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -1027,7 +1027,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -1040,7 +1040,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -1051,7 +1051,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -1064,7 +1064,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -1075,7 +1075,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -1088,7 +1088,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -1099,7 +1099,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -1112,7 +1112,7 @@ index 5669d14..5a30622 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -1123,7 +1123,7 @@ index 5669d14..5a30622 100644
  <tr><th></th><td>!<em>附加_圖像</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
@@ -1136,7 +1136,7 @@ index d67dc88..07e239f 100644
  table td h2 { font-size: 1.4em; text-align: left; }
  table td h3 { font-size: 1.2em; text-align: left; }
  
-+table.sample { border-collapse: collapse; border-spacing: 0; }
++table.sample { border-collapse: collapse; border-spacing: 0; margin: 4px; }
 +table.sample th, table.sample td { border: solid 1px #bbb; }
  </style>
  </head>
@@ -1147,7 +1147,7 @@ index d67dc88..07e239f 100644
  <tr><th></th><td>!<em>attached_image</em>!</td><td></td></tr>
 +
 +<tr><th colspan="3">Tables</th></tr>
-+<tr><th></th><td>|_ A |_ B |_ C |_ D |<br />| 1 | 2 |/2 span 2 |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>1</td><td>2</td><td colspan="2">span 2</td></tr></tbody></table></td></tr>
++<tr><th></th><td>|_. A |_. B |_. C |<br />| A | B | C |<br />|/2. row span | B | C |<br />|. col span |</td><td><table class="sample"><tbody><th>A</th><th>B</th><th>C</th></tr><tr><td>A</td><td>B</td><td>C</td></tr><tr><td rowspan="2">rowspan</td><td>B</td><td>C</td></tr><tr><td colspan="2">colspan</td></tr></tbody></table></td></tr>
 +
  </table>
  
