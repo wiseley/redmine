@@ -1,3 +1,5 @@
+# encoding: utf-8
+#
 # Redmine - project management software
 # Copyright (C) 2006-2014  Jean-Philippe Lang
 #
@@ -22,10 +24,13 @@ class SearchTest < ActiveSupport::TestCase
            :members,
            :member_roles,
            :projects,
+           :projects_trackers,
            :roles,
            :enabled_modules,
            :issues,
            :trackers,
+           :issue_statuses,
+           :enumerations,
            :journals,
            :journal_details,
            :repositories,
@@ -135,6 +140,35 @@ class SearchTest < ActiveSupport::TestCase
     r = Issue.search_results('%notes%')
     assert_equal 1, r.size
     assert_equal issue, r.first
+  end
+
+  def test_search_should_be_case_insensitive
+    issue = Issue.generate!(:subject => "AzerTY")
+
+    r = Issue.search_results('AZERty')
+    assert_include issue, r
+  end
+
+  def test_search_should_be_case_insensitive_with_accented_characters
+    unless sqlite?
+      issue1 = Issue.generate!(:subject => "Special chars: ÖÖ")
+      issue2 = Issue.generate!(:subject => "Special chars: Öö")
+  
+      r = Issue.search_results('ÖÖ')
+      assert_include issue1, r
+      assert_include issue2, r
+    end
+  end
+
+  def test_search_should_be_case_and_accent_insensitive_with_mysql
+    if mysql?
+      issue1 = Issue.generate!(:subject => "OO")
+      issue2 = Issue.generate!(:subject => "oo")
+  
+      r = Issue.search_results('ÖÖ')
+      assert_include issue1, r
+      assert_include issue2, r
+    end
   end
 
   private

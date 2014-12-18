@@ -405,14 +405,6 @@ class Issue < ActiveRecord::Base
     'notes',
     :if => lambda {|issue, user| issue.new_record? || user.allowed_to?(:edit_issues, issue.project) }
 
-  safe_attributes 'status_id',
-    'assigned_to_id',
-    'fixed_version_id',
-    'done_ratio',
-    'lock_version',
-    'notes',
-    :if => lambda {|issue, user| issue.new_statuses_allowed_to(user).any? }
-
   safe_attributes 'notes',
     :if => lambda {|issue, user| user.allowed_to?(:add_issue_notes, issue.project)}
 
@@ -547,6 +539,7 @@ class Issue < ActiveRecord::Base
 
     user_real = user || User.current
     roles = user_real.admin ? Role.all.to_a : user_real.roles_for_project(project)
+    roles = roles.select(&:consider_workflow?)
     return {} if roles.empty?
 
     result = {}
