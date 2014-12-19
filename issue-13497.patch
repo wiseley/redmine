@@ -1,0 +1,2131 @@
+diff --git a/public/help/ar/wiki_syntax_detailed.html b/public/help/ar/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/ar/wiki_syntax_detailed.html
++++ b/public/help/ar/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/az/wiki_syntax_detailed.html b/public/help/az/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/az/wiki_syntax_detailed.html
++++ b/public/help/az/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/bg/wiki_syntax_detailed.html b/public/help/bg/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/bg/wiki_syntax_detailed.html
++++ b/public/help/bg/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/bs/wiki_syntax_detailed.html b/public/help/bs/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/bs/wiki_syntax_detailed.html
++++ b/public/help/bs/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/ca/wiki_syntax_detailed.html b/public/help/ca/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/ca/wiki_syntax_detailed.html
++++ b/public/help/ca/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/cs/wiki_syntax_detailed.html b/public/help/cs/wiki_syntax_detailed.html
+index 011f518..18a2abf 100644
+--- a/public/help/cs/wiki_syntax_detailed.html
++++ b/public/help/cs/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Příspěvky diskuzního fóra:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (odkaz na příspěvek s ID 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -136,9 +145,18 @@
+                 <ul>
+                     <li><strong>project#3</strong> (odkaz na projekt s ID 3)</li>
+                     <li><strong>project:projekt_test</strong> (odkaz na projekt pojmenovaný "projekt_test")</li>
++                    <li><strong>project:"projekt test"</strong> (odkaz na projekt pojmenovaný "projekt test")</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/da/wiki_syntax_detailed.html b/public/help/da/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/da/wiki_syntax_detailed.html
++++ b/public/help/da/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/de/wiki_syntax_detailed.html b/public/help/de/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/de/wiki_syntax_detailed.html
++++ b/public/help/de/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/el/wiki_syntax_detailed.html b/public/help/el/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/el/wiki_syntax_detailed.html
++++ b/public/help/el/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/en-gb/wiki_syntax_detailed.html b/public/help/en-gb/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/en-gb/wiki_syntax_detailed.html
++++ b/public/help/en-gb/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/en/wiki_syntax_detailed.html b/public/help/en/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/en/wiki_syntax_detailed.html
++++ b/public/help/en/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/es/wiki_syntax_detailed.html b/public/help/es/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/es/wiki_syntax_detailed.html
++++ b/public/help/es/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/et/wiki_syntax_detailed.html b/public/help/et/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/et/wiki_syntax_detailed.html
++++ b/public/help/et/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/eu/wiki_syntax_detailed.html b/public/help/eu/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/eu/wiki_syntax_detailed.html
++++ b/public/help/eu/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/fa/wiki_syntax_detailed.html b/public/help/fa/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/fa/wiki_syntax_detailed.html
++++ b/public/help/fa/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/fi/wiki_syntax_detailed.html b/public/help/fi/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/fi/wiki_syntax_detailed.html
++++ b/public/help/fi/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/fr/wiki_syntax_detailed.html b/public/help/fr/wiki_syntax_detailed.html
+index a08876a..732820c 100644
+--- a/public/help/fr/wiki_syntax_detailed.html
++++ b/public/help/fr/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Messages du forum:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (Lien vers le message dont l'id est 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -136,9 +145,18 @@
+                 <ul>
+                     <li><strong>project#3</strong> (Lien vers le projet dont l'id est 3)</li>
+                     <li><strong>project:unprojet</strong> (Lien vers le projet nommé "unprojet")</li>
++                    <li><strong>project:"un projet"</strong> (use double quotes if project name contains spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Eviter ces lien:</p>
+ 
+diff --git a/public/help/gl/wiki_syntax_detailed.html b/public/help/gl/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/gl/wiki_syntax_detailed.html
++++ b/public/help/gl/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/he/wiki_syntax_detailed.html b/public/help/he/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/he/wiki_syntax_detailed.html
++++ b/public/help/he/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/hr/wiki_syntax_detailed.html b/public/help/hr/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/hr/wiki_syntax_detailed.html
++++ b/public/help/hr/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/hu/wiki_syntax_detailed.html b/public/help/hu/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/hu/wiki_syntax_detailed.html
++++ b/public/help/hu/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/id/wiki_syntax_detailed.html b/public/help/id/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/id/wiki_syntax_detailed.html
++++ b/public/help/id/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/issue-13497.patch b/public/help/issue-13497.patch
+deleted file mode 100644
+index 9abae69..0000000
+--- a/public/help/issue-13497.patch
++++ /dev/null
+@@ -1,28 +0,0 @@
+-127a128,136
+->             <li>Forums:
+-> 			    <ul>
+->                     <li><strong>forum#1</strong> (link to forum with id 1</li>
+->                     <li><strong>forum:Support</strong> (link to forum named Support)</li>
+->                     <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
+->                 </ul></li>
+->         </ul>
+-> 
+->         <ul>
+-129c138
+-<                 <ul>
+----
+-> 			    <ul>
+-138c147,148
+-<                     <li><strong>project:someproject</strong> (link to project named "someproject")</li>
+----
+->                     <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
+->                     <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+-141a152,159
+->         <ul>
+->             <li>News:
+-> 			    <ul>
+->                     <li><strong>news#2</strong> (link to news item with id 2)</li>
+->                     <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
+->                     <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
+->                 </ul></li>
+->         </ul>
+diff --git a/public/help/it/wiki_syntax_detailed.html b/public/help/it/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/it/wiki_syntax_detailed.html
++++ b/public/help/it/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/ja/wiki_syntax_detailed.html b/public/help/ja/wiki_syntax_detailed.html
+index 91471f3..764de82 100644
+--- a/public/help/ja/wiki_syntax_detailed.html
++++ b/public/help/ja/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>フォーラムのメッセージ:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (id 1218のメッセージへのリンク)</li>
+                 </ul></li>
+         </ul>
+@@ -136,9 +145,18 @@
+                 <ul>
+                     <li><strong>project#3</strong> (id 3のプロジェクトへのリンク)</li>
+                     <li><strong>project:someproject</strong> ("someproject"という名前のプロジェクトへのリンク)</li>
++                    <li><strong>project:"some project"</strong> (use double quotes if project name contains spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>エスケープ:</p>
+ 
+diff --git a/public/help/ko/wiki_syntax_detailed.html b/public/help/ko/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/ko/wiki_syntax_detailed.html
++++ b/public/help/ko/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/lt/wiki_syntax_detailed.html b/public/help/lt/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/lt/wiki_syntax_detailed.html
++++ b/public/help/lt/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/lv/wiki_syntax_detailed.html b/public/help/lv/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/lv/wiki_syntax_detailed.html
++++ b/public/help/lv/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/mk/wiki_syntax_detailed.html b/public/help/mk/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/mk/wiki_syntax_detailed.html
++++ b/public/help/mk/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/mn/wiki_syntax_detailed.html b/public/help/mn/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/mn/wiki_syntax_detailed.html
++++ b/public/help/mn/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/nl/wiki_syntax_detailed.html b/public/help/nl/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/nl/wiki_syntax_detailed.html
++++ b/public/help/nl/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/no/wiki_syntax_detailed.html b/public/help/no/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/no/wiki_syntax_detailed.html
++++ b/public/help/no/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/pl/wiki_syntax_detailed.html b/public/help/pl/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/pl/wiki_syntax_detailed.html
++++ b/public/help/pl/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/pt-br/wiki_syntax_detailed.html b/public/help/pt-br/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/pt-br/wiki_syntax_detailed.html
++++ b/public/help/pt-br/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/pt/wiki_syntax_detailed.html b/public/help/pt/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/pt/wiki_syntax_detailed.html
++++ b/public/help/pt/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/ro/wiki_syntax_detailed.html b/public/help/ro/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/ro/wiki_syntax_detailed.html
++++ b/public/help/ro/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/ru/wiki_syntax_detailed.html b/public/help/ru/wiki_syntax_detailed.html
+index c5a3216..52788d7 100644
+--- a/public/help/ru/wiki_syntax_detailed.html
++++ b/public/help/ru/wiki_syntax_detailed.html
+@@ -150,6 +150,15 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++		
++        <ul>
+             <li>Сообщения форума:
+                 <ul>
+                   <li><strong>message#1218</strong> (ссылка на сообщение с id 1218)</li>
+@@ -161,6 +170,16 @@
+                 <ul>
+                   <li><strong>project#3</strong> (ссылка на проект с id 3)</li>
+                   <li><strong>project:someproject</strong> (ссылка на проект "someproject")</li>
++                  <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
+                 </ul></li>
+         </ul>
+ 
+diff --git a/public/help/sk/wiki_syntax_detailed.html b/public/help/sk/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/sk/wiki_syntax_detailed.html
++++ b/public/help/sk/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/sl/wiki_syntax_detailed.html b/public/help/sl/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/sl/wiki_syntax_detailed.html
++++ b/public/help/sl/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/sq/wiki_syntax_detailed.html b/public/help/sq/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/sq/wiki_syntax_detailed.html
++++ b/public/help/sq/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/sr-yu/wiki_syntax_detailed.html b/public/help/sr-yu/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/sr-yu/wiki_syntax_detailed.html
++++ b/public/help/sr-yu/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/sr/wiki_syntax_detailed.html b/public/help/sr/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/sr/wiki_syntax_detailed.html
++++ b/public/help/sr/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/sv/wiki_syntax_detailed.html b/public/help/sv/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/sv/wiki_syntax_detailed.html
++++ b/public/help/sv/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/th/wiki_syntax_detailed.html b/public/help/th/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/th/wiki_syntax_detailed.html
++++ b/public/help/th/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/tr/wiki_syntax_detailed.html b/public/help/tr/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/tr/wiki_syntax_detailed.html
++++ b/public/help/tr/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/uk/wiki_syntax_detailed.html b/public/help/uk/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/uk/wiki_syntax_detailed.html
++++ b/public/help/uk/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/vi/wiki_syntax_detailed.html b/public/help/vi/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/vi/wiki_syntax_detailed.html
++++ b/public/help/vi/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
+diff --git a/public/help/zh-tw/wiki_syntax_detailed.html b/public/help/zh-tw/wiki_syntax_detailed.html
+index 4bff716..8a7655f 100644
+--- a/public/help/zh-tw/wiki_syntax_detailed.html
++++ b/public/help/zh-tw/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>論壇訊息：
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (連結至編號 1218 的訊息)</li>
+                 </ul></li>
+         </ul>
+@@ -136,9 +145,18 @@
+                 <ul>
+                     <li><strong>project#3</strong> (連結至編號為 3 的專案)</li>
+                     <li><strong>project:someproject</strong> (連結至名稱為 "someproject" 的專案)</li>
++                    <li><strong>project:"some project"</strong> (use double quotes if project name contains spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>逸出字元：</p>
+ 
+diff --git a/public/help/zh/wiki_syntax_detailed.html b/public/help/zh/wiki_syntax_detailed.html
+index 0049db3..dc26a2b 100644
+--- a/public/help/zh/wiki_syntax_detailed.html
++++ b/public/help/zh/wiki_syntax_detailed.html
+@@ -125,8 +125,17 @@
+         </ul>
+ 
+         <ul>
++            <li>Forums:
++			    <ul>
++                    <li><strong>forum#1</strong> (link to forum with id 1</li>
++                    <li><strong>forum:Support</strong> (link to forum named Support)</li>
++                    <li><strong>forum:"Technical Support"</strong> (use double quotes if forum name contains spaces)</li>
++                </ul></li>
++        </ul>
++
++        <ul>
+             <li>Forum messages:
+-                <ul>
++			    <ul>
+                     <li><strong>message#1218</strong> (link to message with id 1218)</li>
+                 </ul></li>
+         </ul>
+@@ -135,10 +144,19 @@
+             <li>Projects:
+                 <ul>
+                     <li><strong>project#3</strong> (link to project with id 3)</li>
+-                    <li><strong>project:someproject</strong> (link to project named "someproject")</li>
++                    <li><strong>project:some-project</strong> (link to project with name or slug of "some-project")</li>
++                    <li><strong>project:"Some Project"</strong> (use double quotes for project name containing spaces)</li>
+                 </ul></li>
+         </ul>
+ 
++        <ul>
++            <li>News:
++			    <ul>
++                    <li><strong>news#2</strong> (link to news item with id 2)</li>
++                    <li><strong>news:Greetings</strong> (link to news item named "Greetings")</li>
++                    <li><strong>news:"First Release"</strong> (use double quotes if news item name contains spaces)</li>
++                </ul></li>
++        </ul>
+ 
+         <p>Escaping:</p>
+ 
